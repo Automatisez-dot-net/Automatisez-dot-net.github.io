@@ -1,0 +1,20 @@
+---
+# Only the main Sass file needs front matter (the dashes are enough)
+---
+// theme_sg
+//
+// Core theme built above bootstrap.
+//
+
+@import "variables";
+@import "mixins";
+
+@import "../_bootstrap4/scss/bootstrap";
+
+@import "functions";
+
+@import "core";
+@import "page_header";
+@import "page_footer";
+
+@import "icons";

@@ -1,14 +1,15 @@
 ---
 layout: default
 ---
-<article class="post">
-
-  <header class="post-header">
-    <h1 class="post-title">{{ page.title }}</h1>
-  </header>
-
-  <div class="post-content">
-    {{ content }}
-  </div>
-
+<article class="">
+    <header class="">
+        <h1 class="">{{ page.title }}</h1>
+    </header>
+    <div class="">
+        {{ content }}
+    </div>
+    
+    {% if page.ibooks_intro %}
+        {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
+    {% endif %}
 </article>

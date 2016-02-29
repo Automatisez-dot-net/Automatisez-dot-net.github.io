@@ -17,6 +17,9 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: sgamel
 github_username:  automatisez
+# Custom variables
+ibooks_link_alt: "Télécharger sur iBooks"
+ibooks_link: "http://bit.ly/automatisez-sous-mac3"
 
 # Build settings
 markdown: kramdown
