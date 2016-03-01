@@ -1,33 +1,36 @@
 <footer class="bg-inverse">
-  <div class="container" >
+    <div class="container" >
       
-    <div class="row">
-      <div class="col-xs-6 col-sm-3">
-        <ul class="list-inline">
-          <li>{{ site.title }}</li>
-          <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-        </ul>
-      </div>
+        <div class="row">
+            <div class="col-xs-6 col-sm-3">
+                <ul class="list-inline">
+                    <li>{{ site.title }}</li>
+                    <li><a href="mailto:{{ site.email }}">{{ site.email }}</a></li>
+                    <li class="rss-subscribe">
+                        <a href="{{ "/feed.xml" | prepend: site.baseurl }}">Abonnez vous avec le fils RSS</a>
+                    </li>
+                </ul>
+            </div>
 
-      <div class="col-xs-6 col-sm-3">
-        <ul class="list-inline">
-          {% if site.github_username %}
-          <li>
-            {% include icon-github.html username=site.github_username %}
-          </li>
-          {% endif %}
+            <div class="col-xs-6 col-sm-3">
+                <ul class="list-inline">
+                    {% if site.github_username %}
+                    <li>
+                        {% include icon-github.html username=site.github_username %}
+                    </li>
+                    {% endif %}
 
-          {% if site.twitter_username %}
-          <li>
-            {% include icon-twitter.html username=site.twitter_username %}
-          </li>
-          {% endif %}
-        </ul>
-      </div>
+                    {% if site.twitter_username %}
+                    <li>
+                        {% include icon-twitter.html username=site.twitter_username %}
+                    </li>
+                    {% endif %}
+                </ul>
+            </div>
 
-      <div class="col-xs-12 col-sm-6">
-        <p>{{ site.description }}</p>
-      </div>
+            <div class="col-xs-12 col-sm-6">
+                <p>{{ site.description }}</p>
+            </div>
+        </div>
     </div>
-  </div>
 </footer>

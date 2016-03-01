@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_section
 title: Actions
 order: 3
 category: actions

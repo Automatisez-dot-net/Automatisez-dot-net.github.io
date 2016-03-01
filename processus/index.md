@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_section
 title: Processus
 order: 2
 category: processus

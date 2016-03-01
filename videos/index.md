@@ -1,5 +1,5 @@
 ---
-layout: page
+layout: page_section
 title: Vidéos
 order: 4
 category: videos

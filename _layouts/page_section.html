@@ -13,3 +13,34 @@ layout: default
         {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
     {% endif %}
 </article>
+
+{% assign pageCategory = page.category %}
+{% assign listOfPosts = site.categories[pageCategory]  %}
+
+<article>
+    <header class="">
+        <h2 class="">Articles</h2>
+    </header>
+    
+    <ul class='list-group'>
+        {% for post in listOfPosts %}
+            <li class='list-group-item'>
+                <div class="media">
+                    <div class="media-body">
+                        <h3 class="media-heading" >
+                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </h3>
+                        <div class="media-body">{{ post.excerpt }}</div>
+                    </div>
+                    <a class="media-right text-xs-right" href="#">
+                        {% if post.logo %}
+                            {% assign logoURL = site.url+"/"+post.logo %}
+                            <img class="media-object" src="{{logoURL}}" alt="Logo">
+                        {% endif %}
+                        <small class="">{{ post.date | date: "%Y %b %-d" }}</small>
+                    </a>
+                </div>
+            </li>
+        {% endfor %}
+    </ul>
+</article>
