@@ -1,0 +1,15 @@
+---
+layout: default
+---
+<article class="">
+    <header class="">
+        <h2 class="">{{ page.title }}</h2>
+    </header>
+    <div class="">
+        {{ content }}
+    </div>
+    
+    {% if page.ibooks_intro %}
+        {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
+    {% endif %}
+</article>
