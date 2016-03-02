@@ -30,15 +30,17 @@ layout: default
                         <h3 class="media-heading" >
                             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                         </h3>
+                        <div><small class="">{{ post.date | date: "%Y %b %-d" }}</small></div>
+
                         <div class="media-body">{{ post.excerpt }}</div>
                     </div>
-                    <a class="media-right text-xs-right" href="#">
-                        {% if post.logo %}
-                            {% assign logoURL = site.url+"/"+post.logo %}
-                            <img class="media-object" src="{{logoURL}}" alt="Logo">
-                        {% endif %}
-                        <small class="">{{ post.date | date: "%Y %b %-d" }}</small>
-                    </a>
+
+                    {% if post.logo %}
+                        <div class="media-right text-xs-right" >
+                            <img class="media-object" src="/img/icon-posts/{{post.logo}}.png" width="92" alt="Logo">
+                        </div>
+                    {% endif %}
+
                 </div>
             </li>
         {% endfor %}

@@ -2,10 +2,20 @@
 layout: default
 ---
 <article class="">
-    <header class="">
-        <h2 class="">{{ page.title }}</h2>
+    <header class="media">
+        {% if page.logo %}
+        <div class="media-left" >
+            <img class="media-object" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
+        </div>
+        {% endif %}
+        
+        <div class="media-body">
+            <h2 class="media-heading" >{{ page.title }}</h2>
+            <div><small class="">{{ post.date | date: "%Y %b %-d" }}</small></div>
+        </div>
     </header>
-    <div class="">
+
+    <div class="container">
         {{ content }}
     </div>
     
