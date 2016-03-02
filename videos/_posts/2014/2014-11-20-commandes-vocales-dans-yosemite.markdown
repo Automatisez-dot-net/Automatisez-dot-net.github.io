@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post_video
 title:  "Utiliser les commandes vocales dans OS X 10.10 Yosemite"
 date:   2014-11-20 12:00:00 +0100
 logo:   macOSX
+youtube_id: rluMEWK6Bz0
 ---
 
 Si l'article sur les commandes vocales vous a plus, en voici l'illustration en vidéo.
@@ -10,10 +11,6 @@ Si l'article sur les commandes vocales vous a plus, en voici l'illustration en v
 Dans cette vidéo, je vous montre comment activer les commandes vocales et 
 lancer un processus Automator, tel que celui décrit dans l’article dédié 
 aux commandes vocales.
-
-<div class="embed-responsive-item text-xs-center">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/rluMEWK6Bz0" frameborder="0" allowfullscreen></iframe>
-</div>
 
 Pour utiliser correctement les commandes vocales, 
 je vous conseille un micro-casque comme les écouteurs d’un iPhone. 

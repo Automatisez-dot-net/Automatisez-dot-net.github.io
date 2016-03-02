@@ -1,0 +1,29 @@
+<!-- post_header
+
+Include parameters:
+
+- logo
+- title
+- date
+- author
+
+-->
+<header class="media">
+    {% if include.logo %}
+        <div class="media-left" >
+            <img class="media-object" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
+        </div>
+    {% endif %}
+
+    <div class="media-body">
+        <h1 class="media-heading" itemprop="name headline" >{{ include.title }}</h1>
+        <p class="post-meta">
+            <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">{{ include.date | date: "%Y %b %-d" }}</time>
+            {% if page.author %} • 
+                <span itemprop="author" itemscope itemtype="http://schema.org/Person">
+                    <span itemprop="name">{{ include.author }}</span>
+                </span>
+            {% endif %}
+        </p>
+    </div>
+</header>

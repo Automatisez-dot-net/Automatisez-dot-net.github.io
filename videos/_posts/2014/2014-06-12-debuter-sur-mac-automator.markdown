@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post_video
 title:  "Débuter sur Mac présente Automator"
 date:   2014-06-12 12:00:00 +0100
 logo:   automator
+youtube_id: v2wk4lr6fzg
 ---
 
 Une fois n'est pas coutume, voici un lien vers un article et une vidéo proposé sur un site tiers.
@@ -10,11 +11,6 @@ Une fois n'est pas coutume, voici un lien vers un article et une vidéo proposé
 [Débuter sur Mac][dsm] vous propose une courte [introduction à Automator][tuto2] avec 17 minutes de vidéo.
 
 Si vous voulez appréhender cet outil, je vous encourage à y jeter un œil ainsi qu'à la [section dédiée][automator].
-
-
-<div class="embed-responsive-item text-xs-center">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/v2wk4lr6fzg" frameborder="0" allowfullscreen></iframe>
-</div>
 
 
 [dsm]:       http://debutersurmac.com/

@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post_video
 title:  "Créer facilement vos doublages"
 date:   2014-08-07 12:00:00 +0100
 logo:   workflow
+youtube_id: ias9gOFPoTU
 ---
 
 Vous voulez agrémenter vos présentation et vos vidéos avec autre chose que votre voix ?
@@ -11,10 +12,6 @@ Rien de plus facile que faire un petit casting en utilisant les voix de synthès
 transformer un script. 
 
 Cette vidéo vous présente comment faire.
-
-<div class="embed-responsive-item text-xs-center">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/ias9gOFPoTU" frameborder="0" allowfullscreen></iframe>
-</div>
 
 Vous vous demandez peut-être comment il est possible d’enregistrer 
 un doublage de vidéo en utilisant, simplement, la synthèse vocale de votre Mac.

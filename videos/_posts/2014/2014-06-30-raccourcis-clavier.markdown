@@ -1,8 +1,9 @@
 ---
-layout: post
+layout: post_video
 title:  "Système OS X, vos raccourcis clavier personnalisés"
 date:   2014-06-30 12:00:00 +0100
 logo:   macOSX
+youtube_id: 9uReOa779Zw
 ---
 
 Comment ajouter vos propres raccourcis clavier à n'importe qu'elle application~?
@@ -20,7 +21,3 @@ de touches à un module d'impression défini avec Automator.
 
 Vous pouvez aussi définir une combinaison de touches pour activer un service 
 construit avec Automator.
-
-<div class="embed-responsive-item text-xs-center">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/9uReOa779Zw" frameborder="0" allowfullscreen></iframe>
-</div>
