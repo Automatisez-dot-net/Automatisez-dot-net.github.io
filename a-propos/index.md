@@ -3,14 +3,11 @@ layout: page
 title: À propos...
 order: 99
 category: a-propos
+youtube_id: PU3gBr3Uvas
 ---
 
 Apprenez à laisser votre ordinateur prendre en charge les tâches les plus 
 répétitives pour vous concentrer sur l’essentiel.
-
-<div class="embed-responsive-item text-xs-center">
-    <iframe class="embed-responsive-item" src="https://www.youtube.com/embed/PU3gBr3Uvas" frameborder="0" allowfullscreen></iframe>
-</div>
 
 ### Automator ?
 

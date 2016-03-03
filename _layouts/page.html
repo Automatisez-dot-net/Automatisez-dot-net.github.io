@@ -2,7 +2,7 @@
 layout: default
 ---
 <article class="">
-    <header class="media">
+    <header class="media m-b-3">
         {% if page.logo %}
         <div class="media-left" >
             <img class="media-object" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
@@ -14,9 +14,18 @@ layout: default
             <div><small class="">{{ post.date | date: "%Y %b %-d" }}</small></div>
         </div>
     </header>
+    
 
-    <div class="container">
+
+    <div class="container row">
+        <div class="col-xs-12 col-lg-6">
         {{ content }}
+        </div>
+        <div class="col-xs-12 col-lg-6">
+            {% if page.youtube_id %}
+                {% include youtube.html video_id=page.youtube_id %}
+            {% endif %}
+        </div>
     </div>
     
     {% if page.ibooks_intro %}
