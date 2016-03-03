@@ -1,17 +1,27 @@
 
 header {
-    padding-top:     8px;
+    padding-top: 8px;
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
 }
+
 
 
 header .header-visual {
     padding-top: 24px;
-    max-height: 150px;
+    max-height: 75px;
     overflow: hidden;
     
     img {
         width: 100%;
-        margin-top: -150px;
+        margin-top: -25px;
     }
 }
 
+@include media-breakpoint-up(md) {
+    header .header-visual {
+        max-height: 350px;
+        img {
+            margin-top: -175px;
+        }
+    }
+}

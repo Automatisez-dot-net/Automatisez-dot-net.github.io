@@ -24,3 +24,10 @@ ibooks_link: "http://bit.ly/automatisez-sous-mac3"
 # Build settings
 markdown: kramdown
 slogan: Le blog francophone dédié à Automator et l'automatisation des tâches sous Mac OS X et iOS.
+
+defaults:
+    -
+        scope:
+            path: ""
+        values:
+            header_banner: "banner-default.jpg"
