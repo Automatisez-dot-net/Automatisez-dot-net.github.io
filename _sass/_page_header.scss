@@ -1,5 +1,17 @@
 
 header {
     padding-top:     8px;
-    padding-bottom: 24px;
 }
+
+
+header .header-visual {
+    padding-top: 24px;
+    max-height: 150px;
+    overflow: hidden;
+    
+    img {
+        width: 100%;
+        margin-top: -150px;
+    }
+}
+

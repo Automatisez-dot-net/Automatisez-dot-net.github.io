@@ -7,17 +7,23 @@ layout: default
     <ul class="list-group">
         {% for post in site.posts %}
         <li class='list-group-item'>
+            
             <div class="media">
                 <div class="media-body">
-                    <h2 class="media-heading" >
-                        <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                    </h2>
+                    <div class="media-heading m-b-2">
+                        <h2>
+                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </h2>
+                        <div><small class="">{{ post.date | date: "%Y-%m-%d" }}</small></div>
+                    </div>
+                    
                     <div class="media-body">{{ post.excerpt }}</div>
                 </div>
-                <a class="media-right text-xs-right" href="#">
-                    <img class="media-object" data-src="..." alt="Generic placeholder image">
-                    <small class="">{{ post.date | date: "%Y %b %-d" }}</small>
-                </a>
+                {% if post.logo %}
+                    <div class="media-right text-xs-right" >
+                        <img class="media-object" src="/img/icon-posts/{{post.logo}}.png" width="92" alt="Logo">
+                    </div>
+                {% endif %}
             </div>
             
         </li>

@@ -1,11 +1,23 @@
 ---
 layout: default
 ---
-<article class="">
+<article class="media">
     <header class="">
-        <h2 class="">{{ page.title }}</h2>
+        {% if page.logo %}
+        <div class="media-left media-middle" >
+            <img class="media-object" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
+        </div>
+        {% endif %}
+        
+        <div class="media-body">
+            <h2 class="media-heading" >{{ page.title }}</h2>
+            {% if page.date %}
+                <div><small class="">{{ page.date | date: "%Y %b %-d" }}</small></div>
+            {% endif %}
+            </div>
     </header>
-    <div class="">
+    
+    <div>
         {{ content }}
     </div>
     
@@ -27,10 +39,12 @@ layout: default
             <li class='list-group-item'>
                 <div class="media">
                     <div class="media-body">
-                        <h3 class="media-heading" >
-                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
-                        </h3>
-                        <div><small class="">{{ post.date | date: "%Y %b %-d" }}</small></div>
+                        <div class="m-b-2">
+                            <h3 class="media-heading" >
+                                <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                            </h3>
+                            <div><small class="">{{ post.date | date: "%Y %b %-d" }}</small></div>
+                        </div>
 
                         <div class="media-body">{{ post.excerpt }}</div>
                     </div>

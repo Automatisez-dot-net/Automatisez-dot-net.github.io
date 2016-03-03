@@ -1,5 +1,5 @@
 <header class="bg-inverse">
-    <div class="container">
+    <div class="container p-b-2">
 	<nav class="navbar navbar-dark bg-inverse">
 		<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#rootNavigation">&#9776;</button>
 		<div id="rootNavigation" class="collapse navbar-toggleable-xs" >
@@ -29,6 +29,15 @@
 		</div>
 	</nav>
 	<h1><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
+        {% if site.slogan %}
+            <div class="text-muted">{{ site.slogan }}</div>
+        {% endif %}
+    </div>
+    
+    <div class="header-visual">
+        {% if include.banner %}
+        <img class="img-fluid" src="/img/top-backgrounds/{{include.banner}}" aria-hidden="true">
+        {% endif %}
     </div>
 </header>
 
