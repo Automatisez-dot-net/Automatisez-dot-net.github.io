@@ -8,6 +8,7 @@ ibooks_intro: > # Message shown next to link to iBooks Store
     Trouvez des vidéos inédites dans le livre disponible sur l'iBooks Store. 
     Vous y apprendrez aussi comment construire vos propres processus et développer 
     vos propres actions.
+header_banner: banner-red-blobs.jpg
 ---
 
 Quelques illustrations en vidéo de l'utilisation d'*Automator*.
