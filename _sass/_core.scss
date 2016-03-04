@@ -12,13 +12,40 @@ article {
     padding: 24px 0px;
 }
 
+// LINKS
+
+a {
+    color: colorNamed(linkNormal);
+    
+    &:hover,
+    &:active {
+        color: colorNamed(linkActive);
+    }
+    
+    &:visited {
+        color: colorNamed(linkVisited);
+    }
+}
+
+a.link-img {
+    &:hover img {
+        //border: 1px solid lightgray;
+        box-shadow: 0px 8px 4px rgba(0,0,0,0.3);
+        margin-top: -8px;
+        margin-bottom: 8px;
+    }
+}
+
+
 // IMAGES
+
+.img-fluid {
+    margin-left: auto;
+    margin-right: auto
+}
 
 .img-rounded {
     border-radius: 12px;
-    
-    margin-left: auto;
-    margin-right: auto
 }
 
 
@@ -47,3 +74,53 @@ article {
     }
 }
 
+// ===== CARDS
+
+
+.card.sidebar {
+    &,
+    .card-header {
+        border-top-left-radius: 1rem;
+        border-top-right-radius: 1rem;
+    }
+    &,
+    .card-footer {
+        border-bottom-left-radius: 1rem;
+        border-bottom-right-radius: 1rem;
+    }
+    
+    box-shadow: 0px 4px 4px rgba(0,0,0,0.3);
+}
+
+
+// ===== LIST OF POSTS
+
+
+.list-group.list-of-post {
+    a {
+        & {
+            color: lighten(colorNamed(text), 10%);
+        }
+        
+        &:visited {
+            color: lighten(colorNamed(text), 20%);
+        }
+    }
+    
+    .list-group-item {
+        position: relative;
+    }
+    .list-group-item:hover {
+        background-color: colorNamed(thinBg);
+        
+        &:after {
+            content: "";
+            position: absolute;
+            left: -2px;
+            top: 12px;
+            bottom: 12px;
+            width: 4px;
+            background-color: colorNamed(primary);
+        }
+    }
+}

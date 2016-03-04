@@ -4,7 +4,28 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     {% include post_header.html title=page.title date=page.date author=page.author logo=page.logo %}
 
-    <div itemprop="articleBody">
+    <div itemprop="articleBody row">
+        <div class="col-xs-12 col-md-9">
         {{ content }}
+        </div>
+        <div class="col-xs-12 col-md-3">
+            
+            {% if page.attachments %}
+                <h3>Téléchargements</h3>
+                {% for item in page.attachments %}
+                <div class="card sidebar">
+                    <div class="card-header text-xs-center">
+                        {{item.name}}
+                    </div>
+                    <div class="card-block text-xs-center">
+                        <a href="/downloads/{{item.path}}">
+                            <img src="/img/open-iconic/cloud-download.svg" alt="{{item.name}}" width="64" >
+                        </a>
+                    </div>
+                    <div class="card-footer"></div>
+                </div>
+                {% endfor %}
+            {% endif %}
+        </div>
     </div>
 </article>

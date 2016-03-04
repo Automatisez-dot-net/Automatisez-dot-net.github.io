@@ -1,0 +1,4 @@
+
+@function colorNamed($name) {
+    @return map-get($colorPalette, $name);
+}

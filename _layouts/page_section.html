@@ -2,14 +2,14 @@
 layout: default
 ---
 <article class="media">
-    <header class="">
+    <header class="m-t-1 m-b-3">
         {% if page.logo %}
         <div class="media-left media-middle" >
             <img class="media-object" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
         </div>
         {% endif %}
         
-        <div class="media-body">
+        <div class="media-body m-b-3">
             <h2 class="media-heading" >{{ page.title }}</h2>
             {% if page.date %}
                 <div><small class="">{{ page.date | date: "%Y %b %-d" }}</small></div>
@@ -34,7 +34,7 @@ layout: default
         <h2 class="">Articles</h2>
     </header>
     
-    <ul class='list-group'>
+    <ul class="list-group list-of-post">
         {% for post in listOfPosts %}
             <li class='list-group-item'>
                 <div class="media">

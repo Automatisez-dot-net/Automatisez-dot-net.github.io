@@ -1,4 +1,12 @@
 footer {
+ 
+    &.bg-inverse {
+        background-color: colorNamed(darkBg);
+        
+        a {
+            @include link-on-dark;
+        }
+    }
     
     height: auto;
     bottom: 0px;

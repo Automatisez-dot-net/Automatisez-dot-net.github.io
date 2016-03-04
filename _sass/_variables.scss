@@ -6,6 +6,19 @@ $enable-rounded: false;
 
 
 $colorPalette: (
-	mainBg: #f0f0f0
+	mainBg: #fefefe,
+        darkBg: #303030,
+        thinBg: #fafafa,
+        
+        text: #333333,
+        invertedText: #e0e0e0,
+        
+        linkNormal: #e03333,
+        linkActive: #ff4040,
+        linkinvertedActive: #f0f0f0, // Over dark backgrounds
+        linkVisited: darken(#e03333, 10%),
+        
+        primary: rgb(243,72,170)
 );
+
 

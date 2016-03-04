@@ -3,16 +3,50 @@ body > header {
     padding-top: 8px;
     box-shadow: 0px 4px 4px rgba(0,0,0,0.2);
 
+    // Align title padding with navbar
+    .navbar,
+    h1,
+    .text-muted {
+        padding-left:  1rem;
+        padding-right: 1rem;
+    }
+    
+    // Navbar style
+    &.bg-inverse,
+    .navbar.navbar-dark {
+        background-color: colorNamed(darkBg);
+    }
+    
+    .navbar-dark .navbar-nav .nav-link {
+        @include link-on-dark;
+        
+        &.active {
+            color: colorNamed(invertedText);
+            border-bottom: 4px solid colorNamed(linkNormal);
+        }
+    }
+    
+    // Titles
+    
+    h1 a {
+        &:hover {
+            text-decoration: none;
+        }
+    }
+   
+    .text-muted {
+        color: colorNamed(invertedText);
+    }
+    
     // Visual banner in page header
 
     & .header-visual {
         padding-top: 24px;
-        max-height: 75px;
+        max-height: 200px;
         overflow: hidden;
 
         img {
             width: 100%;
-            margin-top: -25px;
         }
 
 
@@ -21,9 +55,8 @@ body > header {
     // Responsive height
     @include media-breakpoint-up(md) {
         & .header-visual {
-            max-height: 350px;
+            max-height: 250px;
             img {
-                margin-top: -175px;
             }
         }
     }

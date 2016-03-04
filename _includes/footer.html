@@ -14,22 +14,22 @@
 
             <div class="col-xs-6 col-sm-3">
                 <ul class="list-inline">
-                    {% if site.github_username %}
-                    <li>
-                        {% include icon-github.html username=site.github_username %}
-                    </li>
-                    {% endif %}
-
                     {% if site.twitter_username %}
                     <li>
                         {% include icon-twitter.html username=site.twitter_username %}
+                    </li>
+                    {% endif %}
+
+                    {% if site.github_username %}
+                    <li>
+                        {% include icon-github.html username=site.github_username %}
                     </li>
                     {% endif %}
                 </ul>
             </div>
 
             <div class="col-xs-12 col-sm-6">
-                <p>{{ site.description }}</p>
+                <small>{{ site.description }}</small>
             </div>
         </div>
     </div>

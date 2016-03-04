@@ -17,7 +17,7 @@ Ces vidéos sont également disponibles sur [la chaine YouTube][YouTube]
 associée à ce site.
 
 <p class="text-xs-center m-t-3 m-b-3">
-    <a href="https://www.youtube.com/user/sgamel/featured">
+    <a class="link-img" href="https://www.youtube.com/user/sgamel/featured">
         <img class="img-fluid img-rounded" src="img/banner_youtube.jpg" alt="Bannière de la chaine" >
     </a>
 </p>

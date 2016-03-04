@@ -1,0 +1,10 @@
+@mixin link-on-dark {
+    &, &:visited {
+        color: colorNamed(linkNormal);
+    }
+
+    &:hover,
+    &:active {
+        color: colorNamed(linkinvertedActive);
+    }
+}
