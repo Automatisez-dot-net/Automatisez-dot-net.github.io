@@ -7,6 +7,11 @@ layout: default
     <div itemprop="articleBody row">
         <div class="col-xs-12 col-md-9">
         {{ content }}
+
+    {% if page.ibooks_intro %}
+        {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
+    {% endif %}
+
         </div>
         <div class="col-xs-12 col-md-3">
             {% if page.attachments %}

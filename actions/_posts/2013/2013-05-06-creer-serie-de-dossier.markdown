@@ -19,3 +19,4 @@ Le code source du projet est disponible [sur Bitbucket][git].
 
 
 [git]: https://bitbucket.org/sgintech/automator-actionfoldersequence
+
