@@ -9,7 +9,6 @@ layout: default
         {{ content }}
         </div>
         <div class="col-xs-12 col-md-3">
-            
             {% if page.attachments %}
                 <h3>Téléchargements</h3>
                 {% for item in page.attachments %}
@@ -18,7 +17,7 @@ layout: default
                         {{item.name}}
                     </div>
                     <div class="card-block text-xs-center">
-                        <a href="/downloads/{{item.path}}">
+                        <a class="link-download" href="/downloads/{{item.path}}">
                             <img src="/img/open-iconic/cloud-download.svg" alt="{{item.name}}" width="64" >
                         </a>
                     </div>

@@ -7,12 +7,16 @@
 				{% assign allSections = site.pages | sort:"order"  %}
 				{% for current in allSections %}
 				
-					{%  assign sectionActive = false %}
-					{%  assign cssClass = '' %}
-					{% if page.category == current.category %}
-						{%  assign sectionActive = true %}
-						{%  assign cssClass = 'active' %}
-					{% endif %}
+                                    {%  assign sectionActive = false %}
+                                    {%  assign cssClass = '' %}
+                                    {% if page.category == current.category %}
+                                        {%  assign sectionActive = true %}
+                                        {%  assign cssClass = 'active' %}
+                                    {% endif %}
+                                    {% if page.categories contains current.category %}
+                                        {%  assign sectionActive = true %}
+                                        {%  assign cssClass = 'active' %}
+                                    {% endif %}
 					
 	          		{% if current.title %}
 						<li class="nav-item">
