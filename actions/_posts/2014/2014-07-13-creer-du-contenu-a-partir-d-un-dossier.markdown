@@ -7,12 +7,11 @@ attachments:
     path: "processus/Workflow-dossier-vers-contenu.zip"
 ---
 
-### On va faire quoi?
-
 Vous avez un dossier rempli de fichiers audios, de photos ou de vidéos, et vous voulez mettre le tout dans une page internet?
-
 Comment publier le tout simplement ? La solution peut-être très simple en utilisant  Automator. 
 Que ce soit pour construire une page internet ou un rapport en texte ou en PDF.
+
+### On va faire quoi?
 
 L'idée est de fournir deux fichiers:
 
@@ -45,7 +44,6 @@ Pour un processus nous allons faire cela de façon interactive:
 
 Le début de votre processus est maintenant achevé et devrait ressembler à ce qui suit.
 
-Wkf-FileIndex-01.png
 {% include post_image.html 
     src='/img/screenshots/2014/07-13_Wkf-FileIndex-01.png' 
     alt='Processus complet' %}
@@ -112,7 +110,6 @@ Notez que nous ne créons du contenu associé au commentaire que si un commentai
 Sinon pour le reste c'est un élément de liste où le nom du fichier est un hyperlien vers le fichier. 
 Comme pour l'exemple je parcours une liste d'images, le contenu généré insère également ces images en utilisant le code «`![libellé](image)`».
 
-Wkf-FileIndex-02.png
 {% include post_image.html 
     src='/img/screenshots/2014/07-13_Wkf-FileIndex-02.png' 
     alt='Script AppleScript' %}

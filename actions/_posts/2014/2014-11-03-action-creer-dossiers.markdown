@@ -1,7 +1,7 @@
 ---
 layout: post
 title: "Yosemite : une nouvelle action pour créer des dossiers"
-date: 2013-11-03
+date: 2014-11-03
 logo: macOSX
 ibooks_intro: > # Message shown next to link to iBooks Store
     Si vous voulez en découvrir un peu plus sur Automator, je vous conseille 
