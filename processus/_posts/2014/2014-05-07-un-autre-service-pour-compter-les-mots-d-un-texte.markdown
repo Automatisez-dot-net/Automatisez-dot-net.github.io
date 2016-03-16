@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Un service pour compter les mots d'un texte
+title: Un autre service pour compter les mots d'un texte...
 date: 2014-05-07 15:00:00
 logo: text
 ---
