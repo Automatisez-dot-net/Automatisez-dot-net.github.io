@@ -16,7 +16,7 @@ Include parameters:
     {% endif %}
 
     <div class="media-body">
-        <h1 class="media-heading" itemprop="name headline" >{{ include.title }}</h1>
+        <h2 class="media-heading" itemprop="name headline" >{{ include.title }}</h2>
         <p class="post-meta m-b-3">
             <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">{{ include.date | date: "%Y %b %-d" }}</time>
             {% if page.author %} • 

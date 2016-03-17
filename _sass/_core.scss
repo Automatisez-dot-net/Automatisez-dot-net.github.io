@@ -8,7 +8,7 @@ body {
     min-height: 100%;
     
     font-family: 'Alegreya Sans', sans-serif;
-    font-size: 16px;
+    font-size: 18px;
 }
 
 article {
@@ -30,15 +30,17 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 h1, .h1 {
-    font-size: 3rem;
+    font-size: 4rem;
 }
 
 h2, .h2 {
     font-size: 2.5rem;
+    margin: 2rem 0rem;
 }
 
 h3, .h3 {
-    font-size: 2rem;
+    font-size: 1.5rem;
+    margin: 3rem 0rem;
 }
 
 
@@ -205,6 +207,21 @@ a.link-download {
             transition: left .5s, top .2s, bottom .2s, width .5s; 
         }
     }
+}
+
+// ===== CODE BLOCKS
+
+
+pre {
+    border:        1px solid #666;
+    border-radius: 4px;
+    
+    background-color: #fafafa;
+    
+    padding: 4px;
+    margin:  16px 0px;
+    
+    font-size: 16px;
 }
 
 
