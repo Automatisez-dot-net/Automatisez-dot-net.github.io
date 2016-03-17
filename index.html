@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article>
+<article class="col-xs-12 col-md-8">
 
     <ul class="list-group list-of-post">
         {% for post in site.posts %}
@@ -32,3 +32,7 @@ layout: default
     </ul>
 
 </article>
+
+<div class="col-xs-12 col-md-4 m-t-2">
+    {% include google-search.html %}
+</div>

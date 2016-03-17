@@ -4,18 +4,19 @@ layout: default
 <article class="post" itemscope itemtype="http://schema.org/BlogPosting">
     {% include post_header.html title=page.title date=page.date author=page.author logo=page.logo %}
 
-    <div itemprop="articleBody row">
+    <div itemprop="articleBody" class="row">
         <div class="col-xs-12 col-md-9">
         {{ content }}
 
-    {% if page.ibooks_intro %}
-        {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
-    {% endif %}
+        {% if page.ibooks_intro %}
+            {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
+        {% endif %}
 
         </div>
         <div class="col-xs-12 col-md-3">
+            {% include google-search.html %}
+            
             {% include attachments.html title="Téléchargements" %}
-
         </div>
     </div>
 </article>

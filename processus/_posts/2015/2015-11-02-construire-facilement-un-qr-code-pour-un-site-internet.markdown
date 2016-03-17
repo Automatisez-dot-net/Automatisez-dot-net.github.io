@@ -94,7 +94,6 @@ L’image est disponible dans le dossier des téléchargements.
 Vous pouvez vérifier que l’affichage des informations vous montre bien 
 l’adresse du site dans le champ des commentaires.
 ￼
-Image code QR et URL dans les commentaires, oct. 2015
 {% include post_image.html 
     src='/img/screenshots/2015/11-02_Serv-URL-QRCode-output.png' 
-    alt="Le QR code produit" %}
+    alt="Image code QR et URL dans les commentaires" %}

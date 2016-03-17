@@ -14,16 +14,23 @@ layout: default
             {% if page.date %}
                 <div><small class="">{{ page.date | date: "%Y %b %-d" }}</small></div>
             {% endif %}
-            </div>
+        </div>
     </header>
     
-    <div>
-        {{ content }}
+    <div class="row">
+        <div class="col-xs-12 col-sm-8 m-t-1">
+            <div>
+                {{ content }}
+            </div>
+
+            {% if page.ibooks_intro %}
+                {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
+            {% endif %}
+        </div>
+        <div class="col-xs-12 col-sm-4">
+            {% include google-search.html %}
+        </div>
     </div>
-    
-    {% if page.ibooks_intro %}
-        {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
-    {% endif %}
 </article>
 
 {% assign pageCategory = page.category %}
