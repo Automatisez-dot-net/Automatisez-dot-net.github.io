@@ -1,6 +1,6 @@
 ---
 layout: page
-title: Livre
+title: "Le livre"
 order: 1
 category: livre
 book_cover: Book-cover-10.10-web.jpeg
