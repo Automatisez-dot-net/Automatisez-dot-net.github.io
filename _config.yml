@@ -5,9 +5,15 @@
 # For technical reasons, this file is *NOT* reloaded automatically when you use
 # 'jekyll serve'. If you change this file, please restart the server process.
 
+gems:
+   - jekyll-paginate
+
 # Site settings
 title: Automatisez.net
 email: info@Automatisez.net
+
+paginate: 10
+
 description: > # this means to ignore newlines until "baseurl:"
   Le site dédié à l'automatisation de vos tâches sur OS X et iOS. 
   Que ce soit avec Automator sur Mac, Workflow pour iOS ou toute autre
@@ -17,6 +23,7 @@ baseurl: "" # the subpath of your site, e.g. /blog
 url: "http://yourdomain.com" # the base hostname & protocol for your site
 twitter_username: sgamel
 github_username:  automatisez
+
 # Custom variables
 ibooks_link_alt: "Télécharger sur iBooks"
 ibooks_link: "http://bit.ly/automatisez-sous-mac3"

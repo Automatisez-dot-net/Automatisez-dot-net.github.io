@@ -27,3 +27,38 @@ Oui... mais comment ?
 
 Apprenez sur ce site comment mieux utiliser votre Mac en lui apprenant à faire 
 votre travail à votre place !
+
+
+-----
+
+### Crédits
+
+Ce site est un site statique généré par [Jekyll](https://jekyllrb.com/).
+
+Les illustations sont de Sylvain Gamel.
+
+
+-----
+
+### Mentions Légales
+
+#### Éditeur & Auteur
+
+Sylvain Gamel
+
+19 rue de la Siagnole,<br>
+Les Estérêts du Lac<br>
+83440 Montauroux<br>
+France
+
+#### Hébergement
+
+Ce site est généré et hébergé sur la plateforme 
+[Github](https://pages.github.com).
+
+
+
+
+
+- [Crédit](./credits/)
+- [Mentions légales](./mentions-legales/)

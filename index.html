@@ -5,7 +5,7 @@ layout: default
 <article class="col-xs-12 col-md-8">
 
     <ul class="list-group list-of-post">
-        {% for post in site.posts %}
+        {% for post in paginator.posts %}
         <li class='list-group-item'>
             
             <div class="media">
@@ -30,6 +30,8 @@ layout: default
         
         {% endfor %}
     </ul>
+    
+    {% include paginator.html %}
 
 </article>
 

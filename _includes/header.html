@@ -1,36 +1,36 @@
 <header class="bg-inverse">
     <div class="container p-b-2">
 	<nav class="navbar navbar-dark bg-inverse">
-		<button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#rootNavigation">&#9776;</button>
-		<div id="rootNavigation" class="collapse navbar-toggleable-xs" >
-			<ul class="nav navbar-nav">
-				{% assign allSections = site.pages | sort:"order"  %}
-				{% for current in allSections %}
-				
-                                    {%  assign sectionActive = false %}
-                                    {%  assign cssClass = '' %}
-                                    {% if page.category == current.category %}
-                                        {%  assign sectionActive = true %}
-                                        {%  assign cssClass = 'active' %}
+            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#rootNavigation">&#9776;</button>
+            <div id="rootNavigation" class="collapse navbar-toggleable-xs" >
+                <ul class="nav navbar-nav">
+                    {% assign allSections = site.pages | sort:"order"  %}
+                    {% for current in allSections %}
+
+                        {%  assign sectionActive = false %}
+                        {%  assign cssClass = '' %}
+                        {% if page.category == current.category %}
+                            {%  assign sectionActive = true %}
+                            {%  assign cssClass = 'active' %}
+                        {% endif %}
+                        {% if page.categories contains current.category %}
+                            {%  assign sectionActive = true %}
+                            {%  assign cssClass = 'active' %}
+                        {% endif %}
+
+                        {% if current.title %}
+                            <li class="nav-item">
+                                {{curent.order}}<a class="nav-link {{ cssClass }}" href="{{ current.url | prepend: site.baseurl }}">
+                                    {{ current.title }}  
+                                    {% if sectionActive %}
+                                        <span class="sr-only">(actuelle)</span>
                                     {% endif %}
-                                    {% if page.categories contains current.category %}
-                                        {%  assign sectionActive = true %}
-                                        {%  assign cssClass = 'active' %}
-                                    {% endif %}
-					
-	          		{% if current.title %}
-						<li class="nav-item">
-							<a class="nav-link {{ cssClass }}" href="{{ current.url | prepend: site.baseurl }}">
-								{{ current.title }}  
-								{% if sectionActive %}
-									<span class="sr-only">(actuelle)</span>
-								{% endif %}
-							</a>
-    	  				</li>
-    	  			{% endif %}
-				{% endfor %}				
-			</ul>
-		</div>
+                                </a>
+                            </li>
+                        {% endif %}
+                    {% endfor %}				
+                </ul>
+            </div>
 	</nav>
 	<h1><a class="site-title" href="{{ site.baseurl }}/">{{ site.title }}</a></h1>
         {% if site.slogan %}

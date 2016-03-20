@@ -1,0 +1,23 @@
+{% if paginator.total_pages > 1 %}
+    <div class="btn-toolbar btn-group-sm m-t-2 text-xs-center" role="toolbar" aria-label="Pagination">
+      {% if paginator.previous_page %}
+        <a class="btn btn-secondary" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">&laquo; Précédent</a>
+      {% else %}
+        <span class="btn btn-secondary">&laquo; Précédent</span>
+      {% endif %}
+
+      {% for page in (1..paginator.total_pages) %}
+        {% if page == paginator.page %}
+          <em class="btn btn-secondary">{{ page }}</em>
+        {% else %}
+          <a class="btn btn-secondary" href="{{ site.paginate_path | prepend: site.baseurl | replace: '//', '/' | replace: ':num', page }}">{{ page }}</a>
+        {% endif %}
+      {% endfor %}
+
+      {% if paginator.next_page %}
+        <a class="btn btn-secondary" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">Suivants &raquo;</a>
+      {% else %}
+        <span class="btn btn-secondary">Suivants &raquo;</span>
+      {% endif %}
+    </div>
+{% endif %}
