@@ -4,7 +4,7 @@
             <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#rootNavigation">&#9776;</button>
             <div id="rootNavigation" class="collapse navbar-toggleable-xs" >
                 <ul class="nav navbar-nav">
-                    {% assign allSections = site.pages | sort:"order"  %}
+                    {% assign allSections = site.pages | sort:"order" %}
                     {% for current in allSections %}
 
                         {%  assign sectionActive = false %}
@@ -18,9 +18,9 @@
                             {%  assign cssClass = 'active' %}
                         {% endif %}
 
-                        {% if current.title %}
+                        {% if current.order != -1 and current.title %}
                             <li class="nav-item">
-                                {{curent.order}}<a class="nav-link {{ cssClass }}" href="{{ current.url | prepend: site.baseurl }}">
+                                <a class="nav-link {{ cssClass }}" href="{{ current.url | prepend: site.baseurl }}">
                                     {{ current.title }}  
                                     {% if sectionActive %}
                                         <span class="sr-only">(actuelle)</span>

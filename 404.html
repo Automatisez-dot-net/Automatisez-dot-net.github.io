@@ -1,0 +1,45 @@
+---
+layout: default
+permalink: /404.html
+order: -1
+title: "Page disparue ou déplacée"
+---
+
+<h2>Cette page manque ou a été déplacée...</h2>
+
+<div class="col-xs-12 m-t-2">
+    {% include google-search.html %}
+</div>
+
+<article class="col-xs-12">
+
+    <ul class="list-group list-of-post">
+        {% for post in paginator.posts %}
+        <li class='list-group-item'>
+            
+            <div class="media">
+                <div class="media-body">
+                    <div class="media-heading m-b-2">
+                        <h2>
+                            <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
+                        </h2>
+                        <div><small class="">{{ post.date | date: "%Y-%m-%d" }}</small></div>
+                    </div>
+                    
+                </div>
+                {% if post.logo %}
+                    <div class="media-right text-xs-right" >
+                        <img class="media-object" src="/img/icon-posts/{{post.logo}}.png" width="92" alt="Logo">
+                    </div>
+                {% endif %}
+            </div>
+            <div class="media-body">{{ post.excerpt }}</div>
+        </li>
+        
+        {% endfor %}
+    </ul>
+    
+    {% include paginator.html %}
+
+</article>
+
