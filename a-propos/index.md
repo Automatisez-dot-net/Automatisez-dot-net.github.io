@@ -46,9 +46,8 @@ Les illustations sont de Sylvain Gamel.
 
 Sylvain Gamel
 
-19 rue de la Siagnole,<br>
-Les Estérêts du Lac<br>
-83440 Montauroux<br>
+216 Ch. de Chense,<br>
+83600 Les Adrets de l'Estérel<br>
 France
 
 #### Hébergement
@@ -58,7 +57,3 @@ Ce site est généré et hébergé sur la plateforme
 
 
 
-
-
-- [Crédit](./credits/)
-- [Mentions légales](./mentions-legales/)

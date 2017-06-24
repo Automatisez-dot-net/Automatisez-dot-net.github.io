@@ -66,28 +66,5 @@ Parmi les nombreux sujets abordés dans l’ouvrage, vous trouverez :
 
 Cet ouvrage est le parfait compagnon pour approfondir votre maitrise du Mac et de son environnement unique.
 
------
-
-### Informations
-
-Le livre, dans sa dernière version, pèse environ 800Mo.
-Plusieurs acheteurs se plaignent de ne pas réussir à le télécharger sur leur iPad.
-
-Si vous rencontrez ce genre de soucis, merci de suivre ces quelques étapes :
-
-- Vérifier que vous avez suffisamment d'espace de stockage disponible sur l'iPad. 
-  Si vous avez moins d'un Giga de disponible vous êtes déjà dans les limites. 
-  Faites de la place.
-- Essayez de télécharger le livre avec iTunes (sur Windows ou avec OS X 10.9)
-  ou iBooks Mac (OS X 10.9 et plus). Utilisez ensuite la synchronisation 
-  pour copier le livre sur iPad.
-- Contactez l'assistance Apple si aucune de ces solutions ne fonctionne.
-- Souvenez-vous qu'il est toujours possible de demander un remboursement 
-  auprès d'Apple si le livre n'est vraiment pas compatible avec votre iPad.
-- Souvenez-vous que laisser un commentaire sur la boutique n'aidera pas. 
-  Je ne peux pas contacter les acheteurs par ce biais. 
-  Et Apple ne vérifie pas ce que vous postez. 
-  Contactez Apple directement sera bien plus efficace.
-- Certains ont aussi des soucis avec des iPad jailbreakés... 
-  Dans ce cas la solution semble être de passer par iTunes pour la synchronisation.
-
+Si vous rencontrez des soucis pour télécharger ce livre sur iPad ou Mac, 
+merci de consulter [ce guide](./faq-erreurs/).
