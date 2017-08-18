@@ -1,6 +1,6 @@
 ---
 layout: post_video
-title:  "Utiliser un format pesonnalisé de date"
+title:  "Utiliser un format personnalisé de date"
 date:   2017-08-17 23:00:00 +0100
 logo:   macOSX
 youtube_id: hHbQpEJvhxg
