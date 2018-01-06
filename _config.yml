@@ -20,11 +20,12 @@ description: > # this means to ignore newlines until "baseurl:"
   solution, n'oubliez jamais que l'ordinateur est plus doué que vous pour
   les tâches répétitives.
 baseurl: "" # the subpath of your site, e.g. /blog
-url: "http://yourdomain.com" # the base hostname & protocol for your site
+url: "http://Automatisez.net" # the base hostname & protocol for your site
 twitter_username: sgamel
 github_username:  automatisez
 
-exclude: [assets]
+exclude: [ "assets", "scripts", "vendor", "Gemfile*" ]
+
 
 # Custom variables
 ibooks_link_alt: "Télécharger sur iBooks"
