@@ -9,18 +9,18 @@ ibooks_intro:
     sur Mac OS X ou iOS.
 attachments:
     - name: Un extrait du livre au format PDF
-      path: downloads/livre/Automatisez-sous-Mac-extrait.pdf
+      path: livre/Automatisez-sous-Mac-extrait.pdf
       icon: book
     - name: Un extrait au format iBooks 
-      path: downloads/livre/Automatisez-sous-Mac-extrait-ibooks.zip
+      path: livre/Automatisez-sous-Mac-extrait-ibooks.zip
       icon: book
       description: Format compatible avec iBooks pour OS X Mavericks ou iPad 
                    (attention, ce fichier est dans une archive zip)
     - name: Exemples
-      path: downloads/livre/Automatiser_sous_Mac-exemples_2014-12-10.zip
+      path: livre/Automatiser_sous_Mac-exemples_2014-12-10.zip
       description: Les exemples du livre à télécharger.
     - name: Captures d'écran
-      path: downloads/livre/Automatisez_sous_Mac-captures.zip
+      path: livre/Automatisez_sous_Mac-captures.zip
       icon: aperture
       description: Quelques captures d'écran pour un aperçu rapide.
 ---
