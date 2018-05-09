@@ -121,7 +121,7 @@ locale.setlocale(locale.LC_ALL, locale = "FR_fr")
 
 Le premier paramètre inque sur quelle information la localisation va s'appliquer.
 Le second indique la langue, ici le Français de France. Vous pourriez aussi
-utiliser une variante francophone Suisse ou Québéquoise.
+utiliser une variante francophone suisse ou Québécoise.
 
 ### Le processus final
 
@@ -153,7 +153,7 @@ Ce qui donne le processus suivant :
 Et voilà, vous savez maintenant utiliser un peu de Python pour
 enrichir vos processus et effectuer des calculs simples de date.
 
-J'espère que vous avez trouvé cet article utile et intéressant.
+J’espère que vous avez trouvé cet article utile et intéressant.
 
 
 [1]: https://docs.python.org/3.5/library/datetime.html?highlight=strftime#datetime.date.strftime
