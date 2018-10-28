@@ -276,5 +276,22 @@ input#gsc-i-id1.gsc-input {
 // ===== PAGINATION
 
 .btn-toolbar[role=toolbar] .btn {
-    margin-bottom: 0.5em;
+    margin-bottom: 0.5rem;
+}
+
+// ===== SEARCH FORM
+
+form.search-form {
+    display: flex;
+    padding: 0;
+    margin: 0;
+    
+    * {
+        flex: 0 0 auto;
+    }
+    
+    input[type=text] {
+        flex-grow: 1;
+        margin-left: 0.5rem;
+    }
 }
