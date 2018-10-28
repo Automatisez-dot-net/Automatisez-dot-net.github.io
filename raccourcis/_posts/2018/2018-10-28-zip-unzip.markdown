@@ -1,0 +1,59 @@
+---
+layout: post
+title: Zip et Unzip pour iPad
+date: 2018-10-28 19:00:00 +02:00
+logo: shortcut-app
+attachments: 
+  - name: Zip (raccourcis)
+    url: https://github.com/automatisez/iOS-workflow/blob/master/tools/Zip.shortcut?raw=true
+  - name: Unzip (raccourcis)
+    url: https://github.com/automatisez/iOS-workflow/blob/master/tools/Unzip.shortcut?raw=true
+---
+
+Ces deux raccourcis fonctionnent comme des extension de partage
+et vous permettre de créer une archive ou d'en décompresser le contenu.
+
+iOS ne permet pas de créer des fichiers Zip ou les décompresser et
+ces deux processus permettent de combler ce manque sans utiliser une
+application tierce.
+
+### Zip pour créer une archive
+
+Le raccourci s'utilise comme une extension de la feuille de partage.
+
+Il commence par vous demander le nom du fichier Zip à créer.
+Par défault il vous proposer un nom qui utilise la date du jour. 
+Vous pouvez bien entendu ajuster ce comportement.
+
+Il récupère ensuite les éléments passés à l'extension pour
+construire l'archive.
+
+Notez que j'ai configuré l'action pour créer un fichier au format zip.
+Vous pouvez modifier ce format pour un autre comme `tar.gz`.
+
+Vérifiez les options de l'action pour voir ce qui est possible.
+
+La dernière étape est la plus importante puisque c'est avec 
+la feuille de partage que vous allez dire quoi faire de cette archive.
+
+Vous pouvez envoyer le Zip par email, l'enregistrer dans l'application
+Fichiers ou toute autre action disponible.
+
+{% include post_image.html 
+    src='/img/screenshots/2018/10-28_shortcut-zip.jpg' 
+    alt="Le détail du raccourci pour construire un fichier Zip." %}
+
+
+### Unzip pour décompresser une archive
+
+Le raccourci pour décompresser une archive est bien plus simple.
+
+Il suffit de lui passer un fichier d'archive pour qu'il le décompresse.
+
+Vous indiquez enfin dans la feuille de partage ou enregistrer 
+le résultat.
+
+{% include post_image.html 
+    src='/img/screenshots/2018/10-28_shortcut-unzip.jpg' 
+    alt="Le détail du raccourci pour décompresser une archive Zip." %}
+

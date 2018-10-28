@@ -4,7 +4,7 @@ title: Comment faire des calcul avec des dates ?
 date: 2018-05-09 19:00:00 +02:00
 logo: automator
 attachments: 
-  - name: date-calculs-python..workflow
+  - name: date-calculs-python.workflow
     path: processus/date-calculs-python.workflow.zip
 ---
 

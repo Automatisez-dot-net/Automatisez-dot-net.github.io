@@ -2,7 +2,7 @@
 layout: page_section
 title: Raccourcis
 order: 2
-category: shortcut
+category: raccourcis
 header_banner: banner-mangue.jpg
 logo: shortcut-app
 download_url:
