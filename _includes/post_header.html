@@ -11,12 +11,12 @@ Include parameters:
 <header class="media mt-1 mb-3">
     {% if include.logo %}
         <div class="media-left" >
-            <img class="media-object" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
+            <img class="media-object mr-1" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
         </div>
     {% endif %}
 
     <div class="media-body">
-        <h2 class="media-heading" itemprop="name headline" >{{ include.title }}</h2>
+        <h2 class="media-heading mt-0 mb-1" itemprop="name headline" >{{ include.title }}</h2>
         <p class="post-meta mb-3">
             <time datetime="{{ include.date | date_to_xmlschema }}" itemprop="datePublished">{{ include.date | date: "%Y %b %-d" }}</time>
             {% if page.author %} • 

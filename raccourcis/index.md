@@ -26,7 +26,7 @@ expérience sur votre iPhone ou votre iPad.
 Vous pouvez facilement proposer un raccourci en utilisant 
 ce formulaire.
 
-<div class="mt-3 mb-3 text-xs-center">
+<div class="mt-3 mb-3 text-center">
 {% include modals/modal-button.html 
     label="Proposer un raccourci" 
     modalId="shortcut-modal" %}

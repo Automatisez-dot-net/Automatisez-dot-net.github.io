@@ -5,12 +5,12 @@ layout: default
     <header class="media mt-1 mb-3">
         {% if page.logo %}
         <div class="media-left media-middle" >
-            <img class="media-object" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
+            <img class="media-object mr-1" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
         </div>
         {% endif %}
         
         <div class="media-body mb-3">
-            <h2 class="media-heading" >{{ page.title }}</h2>
+            <h2 class="media-heading mt-0 mb-1" >{{ page.title }}</h2>
             {% if page.date %}
                 <div><small class="">{{ page.date | date: "%Y %b %-d" }}</small></div>
             {% endif %}
@@ -59,7 +59,7 @@ layout: default
 
                     {% if post.logo %}
                         <div class="media-right text-right" >
-                            <img class="media-object" src="/img/icon-posts/{{post.logo}}.png" width="92" alt="Logo">
+                            <img class="media-object ml-1" src="/img/icon-posts/{{post.logo}}.png" width="92" alt="Logo">
                         </div>
                     {% endif %}
 
