@@ -171,15 +171,17 @@ a.link-download {
 
 // ===== CARDS
 .card.sidebar {
+    $card-radius: .3rem;
+    
     &,
     .card-header {
-        border-top-left-radius: .5rem;
-        border-top-right-radius: .5rem;
+        border-top-left-radius: $card-radius;
+        border-top-right-radius: $card-radius;
     }
     &,
     .card-footer {
-        border-bottom-left-radius: .5rem;
-        border-bottom-right-radius: .5rem;
+        border-bottom-left-radius: $card-radius;
+        border-bottom-right-radius: $card-radius;
     }
     
     box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.3);
