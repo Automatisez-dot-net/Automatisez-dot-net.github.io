@@ -4,15 +4,13 @@ layout: default
 <article>
     <header class="media mt-1 mb-3">
         {% if page.logo %}
-        <div class="media-left media-middle" >
-            <img class="media-object mr-1" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
-        </div>
+          <img class="align-self-center mr-1" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
         {% endif %}
         
-        <div class="media-body mb-3">
-            <h2 class="media-heading mt-0 mb-1" >{{ page.title }}</h2>
+        <div class="media-body align-self-center">
+            <h2 class="media-heading my-0" >{{ page.title }}</h2>
             {% if page.date %}
-                <div><small class="">{{ page.date | date: "%Y %b %-d" }}</small></div>
+                <div class="mt-1"><small class="">{{ page.date | date: "%Y %b %-d" }}</small></div>
             {% endif %}
         </div>
     </header>

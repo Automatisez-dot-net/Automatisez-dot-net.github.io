@@ -8,25 +8,26 @@ $line-height-base: 1.5;
 
 // Custom palette
 
+$text-muted: #fafafa;
 
 $colorPalette: (
-	mainBg: #fefefe,
-        darkBg: #303030,
-        thinBg: #fafafa,
-        
-        text: #333333,
-        textLight: #666666,
-        invertedText: #e0e0e0,
-        
-        linkNormal: #e03333,
-        linkActive: #ff4040,
-        linkinvertedActive: #f0f0f0, // Over dark backgrounds
-        linkVisited: darken(#e03333, 10%),
-        
-        headings: #ff5842,
-        primary: rgb(243,72,170),
+    mainBg: #fefefe,
+    darkBg: #303030,
+    thinBg: #fafafa,
 
-        greyLight: #888888
+    text: #333333,
+    textLight: #666666,
+    invertedText: #e0e0e0,
+
+    linkNormal: #e03333,
+    linkActive: #ff4040,
+    linkinvertedActive: #f0f0f0, // Over dark backgrounds
+    linkVisited: darken(#e03333, 10%),
+
+    headings: #ff5842,
+    primary: rgb(243,72,170),
+
+    greyLight: #888888
 );
 
 
