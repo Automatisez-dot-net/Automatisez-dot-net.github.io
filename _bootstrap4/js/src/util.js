@@ -1,63 +1,39 @@
+import $ from 'jquery'
+
 /**
  * --------------------------------------------------------------------------
- * Bootstrap (v4.0.0-alpha.2): util.js
+ * Bootstrap (v4.1.3): util.js
  * Licensed under MIT (https://github.com/twbs/bootstrap/blob/master/LICENSE)
  * --------------------------------------------------------------------------
  */
 
 const Util = (($) => {
-
-
   /**
    * ------------------------------------------------------------------------
    * Private TransitionEnd Helpers
    * ------------------------------------------------------------------------
    */
 
-  let transition = false
+  const TRANSITION_END = 'transitionend'
+  const MAX_UID = 1000000
+  const MILLISECONDS_MULTIPLIER = 1000
 
-  const TransitionEndEvent = {
-    WebkitTransition : 'webkitTransitionEnd',
-    MozTransition    : 'transitionend',
-    OTransition      : 'oTransitionEnd otransitionend',
-    transition       : 'transitionend'
-  }
-
-  // shoutout AngusCroll (https://goo.gl/pxwQGp)
+  // Shoutout AngusCroll (https://goo.gl/pxwQGp)
   function toType(obj) {
-    return ({}).toString.call(obj).match(/\s([a-zA-Z]+)/)[1].toLowerCase()
-  }
-
-  function isElement(obj) {
-    return (obj[0] || obj).nodeType
+    return {}.toString.call(obj).match(/\s([a-z]+)/i)[1].toLowerCase()
   }
 
   function getSpecialTransitionEndEvent() {
     return {
-      bindType: transition.end,
-      delegateType: transition.end,
+      bindType: TRANSITION_END,
+      delegateType: TRANSITION_END,
       handle(event) {
         if ($(event.target).is(this)) {
-          return event.handleObj.handler.apply(this, arguments)
+          return event.handleObj.handler.apply(this, arguments) // eslint-disable-line prefer-rest-params
         }
+        return undefined // eslint-disable-line no-undefined
       }
     }
-  }
-
-  function transitionEndTest() {
-    if (window.QUnit) {
-      return false
-    }
-
-    let el = document.createElement('bootstrap')
-
-    for (let name in TransitionEndEvent) {
-      if (el.style[name] !== undefined) {
-        return { end: TransitionEndEvent[name] }
-      }
-    }
-
-    return false
   }
 
   function transitionEndEmulator(duration) {
@@ -77,15 +53,9 @@ const Util = (($) => {
   }
 
   function setTransitionEndSupport() {
-    transition = transitionEndTest()
-
     $.fn.emulateTransitionEnd = transitionEndEmulator
-
-    if (Util.supportsTransitionEnd()) {
-      $.event.special[Util.TRANSITION_END] = getSpecialTransitionEndEvent()
-    }
+    $.event.special[Util.TRANSITION_END] = getSpecialTransitionEndEvent()
   }
-
 
   /**
    * --------------------------------------------------------------------------
@@ -93,52 +63,75 @@ const Util = (($) => {
    * --------------------------------------------------------------------------
    */
 
-  let Util = {
+  const Util = {
 
     TRANSITION_END: 'bsTransitionEnd',
 
     getUID(prefix) {
       do {
-        prefix += ~~(Math.random() * 1000000) // "~~" acts like a faster Math.floor() here
+        // eslint-disable-next-line no-bitwise
+        prefix += ~~(Math.random() * MAX_UID) // "~~" acts like a faster Math.floor() here
       } while (document.getElementById(prefix))
       return prefix
     },
 
     getSelectorFromElement(element) {
       let selector = element.getAttribute('data-target')
-
-      if (!selector) {
+      if (!selector || selector === '#') {
         selector = element.getAttribute('href') || ''
-        selector = /^#[a-z]/i.test(selector) ? selector : null
       }
 
-      return selector
+      try {
+        return document.querySelector(selector) ? selector : null
+      } catch (err) {
+        return null
+      }
+    },
+
+    getTransitionDurationFromElement(element) {
+      if (!element) {
+        return 0
+      }
+
+      // Get transition-duration of the element
+      let transitionDuration = $(element).css('transition-duration')
+      const floatTransitionDuration = parseFloat(transitionDuration)
+
+      // Return 0 if element or transition duration is not found
+      if (!floatTransitionDuration) {
+        return 0
+      }
+
+      // If multiple durations are defined, take the first
+      transitionDuration = transitionDuration.split(',')[0]
+
+      return parseFloat(transitionDuration) * MILLISECONDS_MULTIPLIER
     },
 
     reflow(element) {
-      new Function('bs', 'return bs')(element.offsetHeight)
+      return element.offsetHeight
     },
 
     triggerTransitionEnd(element) {
-      $(element).trigger(transition.end)
+      $(element).trigger(TRANSITION_END)
     },
 
+    // TODO: Remove in v5
     supportsTransitionEnd() {
-      return Boolean(transition)
+      return Boolean(TRANSITION_END)
+    },
+
+    isElement(obj) {
+      return (obj[0] || obj).nodeType
     },
 
     typeCheckConfig(componentName, config, configTypes) {
-      for (let property in configTypes) {
-        if (configTypes.hasOwnProperty(property)) {
-          let expectedTypes = configTypes[property]
-          let value         = config[property]
-          let valueType
-
-          if (value && isElement(value)) {
-            valueType = 'element'
-          } else {
-            valueType = toType(value)
-          }
+      for (const property in configTypes) {
+        if (Object.prototype.hasOwnProperty.call(configTypes, property)) {
+          const expectedTypes = configTypes[property]
+          const value         = config[property]
+          const valueType     = value && Util.isElement(value)
+            ? 'element' : toType(value)
 
           if (!new RegExp(expectedTypes).test(valueType)) {
             throw new Error(
@@ -154,7 +147,6 @@ const Util = (($) => {
   setTransitionEndSupport()
 
   return Util
-
-})(jQuery)
+})($)
 
 export default Util

@@ -121,7 +121,7 @@ a.link-download {
 
 .inline-cover {
     width: 100%;
-    @include pull-right;
+    @include float-right;
     margin: 8px 0px 8px 8px;
     @include media-breakpoint-up(md) {
         width: 50%;

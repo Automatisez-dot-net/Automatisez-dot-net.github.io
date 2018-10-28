@@ -5,7 +5,7 @@ layout: default
     {% include post_header.html title=page.title date=page.date author=page.author logo=page.logo %}
 
     <div itemprop="articleBody" class="row">
-        <div class="col-xs-12 col-md-9">
+        <div class="col-12 col-md-9">
         {{ content }}
 
         {% if page.ibooks_intro %}
@@ -13,7 +13,7 @@ layout: default
         {% endif %}
 
         </div>
-        <div class="col-xs-12 col-md-3">
+        <div class="col-12 col-md-3">
             {% include google-search.html %}
             
             {% include attachments.html title="Téléchargements" %}

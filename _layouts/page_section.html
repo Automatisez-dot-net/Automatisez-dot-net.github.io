@@ -1,15 +1,15 @@
 ---
 layout: default
 ---
-<article class="media">
-    <header class="m-t-1 m-b-3">
+<article>
+    <header class="media mt-1 mb-3">
         {% if page.logo %}
         <div class="media-left media-middle" >
             <img class="media-object" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
         </div>
         {% endif %}
         
-        <div class="media-body m-b-3">
+        <div class="media-body mb-3">
             <h2 class="media-heading" >{{ page.title }}</h2>
             {% if page.date %}
                 <div><small class="">{{ page.date | date: "%Y %b %-d" }}</small></div>
@@ -18,7 +18,7 @@ layout: default
     </header>
     
     <div class="row">
-        <div class="col-xs-12 col-sm-8 m-t-1">
+        <div class="col-12 col-sm-8 mt-1">
             <div>
                 {{ content }}
             </div>
@@ -27,7 +27,7 @@ layout: default
                 {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
             {% endif %}
         </div>
-        <div class="col-xs-12 col-sm-4">
+        <div class="col-12 col-sm-4">
             {% include google-search.html %}
             {% include download_links.html title="Liens de téléchargements" %}
         </div>
@@ -47,7 +47,7 @@ layout: default
             <li class='list-group-item'>
                 <div class="media">
                     <div class="media-body">
-                        <div class="m-b-2">
+                        <div class="mb-2">
                             <h3 class="media-heading" >
                                 <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                             </h3>
@@ -58,7 +58,7 @@ layout: default
                     </div>
 
                     {% if post.logo %}
-                        <div class="media-right text-xs-right" >
+                        <div class="media-right text-right" >
                             <img class="media-object" src="/img/icon-posts/{{post.logo}}.png" width="92" alt="Logo">
                         </div>
                     {% endif %}

@@ -1,9 +1,15 @@
 <header class="bg-inverse">
-    <div class="container p-b-2">
-	<nav class="navbar navbar-dark bg-inverse">
-            <button class="navbar-toggler hidden-sm-up" type="button" data-toggle="collapse" data-target="#rootNavigation">&#9776;</button>
-            <div id="rootNavigation" class="collapse navbar-toggleable-xs" >
-                <ul class="nav navbar-nav">
+    <div class="container pb-2">
+	<nav class="navbar navbar-expand-sm navbar-dark bg-inverse">
+            <button class="navbar-toggler hidden-sm-up" 
+                    type="button" 
+                    data-toggle="collapse" 
+                    data-target="#rootNavigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div id="rootNavigation" 
+                 class="collapse navbar-collapse" >
+                <ul class="navbar-nav">
                     {% assign allSections = site.pages | sort:"order" %}
                     {% for current in allSections %}
 
