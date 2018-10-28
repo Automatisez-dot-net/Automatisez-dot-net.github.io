@@ -16,7 +16,7 @@ paginate: 10
 
 description: > # this means to ignore newlines until "baseurl:"
   Le site dédié à l'automatisation de vos tâches sur OS X et iOS. 
-  Que ce soit avec Automator sur Mac, Workflow pour iOS ou toute autre
+  Que ce soit avec Automator sur Mac, Raccourcis pour iOS ou toute autre
   solution, n'oubliez jamais que l'ordinateur est plus doué que vous pour
   les tâches répétitives.
 baseurl: "" # the subpath of your site, e.g. /blog
@@ -33,7 +33,7 @@ ibooks_link: "http://bit.ly/automatisez-sous-mac3"
 
 # Build settings
 markdown: kramdown
-slogan: Le blog francophone dédié à Automator et l'automatisation des tâches sous Mac OS X et iOS.
+slogan: Le site francophone dédié à l'automatisation de vos tâches pour macOS et iOS.
 
 defaults:
     -

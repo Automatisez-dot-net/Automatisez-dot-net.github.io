@@ -1,0 +1,21 @@
+{% if page.download_url %}
+    <hr class="hidden-md-up m-t-3">
+    <h3 class="responsive">{{ include.title }}</h3>
+    {% for item in page.download_url %}
+        {% assign icon_src="cloud-download" %}
+        {% if item.icon %}
+            {% assign icon_src=item.icon %}
+        {% endif %}
+        <div class="card sidebar">
+            <div class="card-header text-xs-center">
+              <strong>{{item.name}}</strong>
+            </div>
+            <div class="card-block text-xs-center">
+                <a class="link-download" href="{{item.url}}">
+                    <img src="/img/open-iconic/{{icon_src}}.svg" alt="Télécharger {{item.name}}" width="64" >
+                </a>
+            </div>
+            <div class="card-footer">{{item.description | markdownify}}</div>
+        </div>
+    {% endfor %}
+{% endif %}

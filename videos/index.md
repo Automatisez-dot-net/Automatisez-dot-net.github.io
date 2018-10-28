@@ -1,7 +1,7 @@
 ---
 layout: page_section
 title: Vidéos
-order: 4
+order: 5
 category: videos
 logo: youtube
 ibooks_intro: > # Message shown next to link to iBooks Store

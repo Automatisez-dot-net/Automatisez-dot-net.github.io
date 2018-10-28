@@ -1,0 +1,15 @@
+{% comment %}
+Simple module to insert a button that will trigger a modal.
+
+Parameters:
+
+- modalId: identifier of the modal to show (DOM id)
+- label: displayed text in the button content
+
+{% endcomment %}
+<button type="button" 
+        class="btn btn-info btn-lg" 
+        data-toggle="modal" 
+        data-target="#{{ include.modalId }}" >
+  {{ include.label }}
+</button>

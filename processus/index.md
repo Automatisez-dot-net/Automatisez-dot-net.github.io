@@ -1,7 +1,7 @@
 ---
 layout: page_section
 title: Processus
-order: 2
+order: 3
 category: processus
 ibooks_intro: > # Message shown next to link to iBooks Store
     Trouvez encore plus d'exemple de processus, 
