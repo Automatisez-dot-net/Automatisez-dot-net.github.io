@@ -12,7 +12,7 @@
             </div>
             <div class="card-block text-center">
                 {% if item.path %}
-                  {% assign a_href="/downloads/"+item.path %}
+                  {% capture a_href %}/downloads/{{ item.path }}{% endcapture %}
                 {% else %}
                   {% assign a_href=item.url %}
                 {% endif %}
