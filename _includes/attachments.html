@@ -12,9 +12,9 @@
             </div>
             <div class="card-block text-center">
                 {% if item.path %}
-                  {% assign a_href="/downloads/{{ item.path }}" %}
+                  {% assign a_href="/downloads/"+item.path %}
                 {% else %}
-                  {% assign a_href="{{ item.url }}" %}
+                  {% assign a_href=item.url %}
                 {% endif %}
                 <a class="link-download" href="{{ a_href }}">
                     <img src="/img/open-iconic/{{icon_src}}.svg" alt="{{item.name}}" width="64" >
