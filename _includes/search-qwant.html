@@ -1,7 +1,10 @@
 <form id="search-form" class="search-form"
       method="GET" action="https://www.qwant.com" 
       onsubmit="addSiteSearch()" >
-  <a href="https://www.qwant.com" title="Rechercher avec Qwant"><img src="https://www.qwant.com/img/logo/q-48.png" border="0" alt="Qwant" align="absmiddle"></a>
+  <header id="search-form-header">    
+	  <a href="https://www.qwant.com" title="Rechercher avec Qwant" class="search-engine"><img src="https://www.qwant.com/img/logo/q-48.png" border="0" alt="Qwant" align="absmiddle"></a>
+	  <span>Chercher avec Qwant:</span>
+  </header>
   <input type="text" name="q" id="query" maxlength="255" value="">
   <input type="hidden" name="l" value="fr"> 
   <input type="submit" name="btnG" value="Chercher" class="btn btn-sm btn-info"> 

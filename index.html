@@ -2,7 +2,7 @@
 layout: default
 ---
 
-<article class="col-xs-12 col-md-8">
+<article class="col-12 col-md-8">
 
     <ul class="list-group list-of-post">
         {% for post in paginator.posts %}
@@ -10,7 +10,7 @@ layout: default
             
             <div class="media">
                 <div class="media-body">
-                    <div class="media-heading m-b-2">
+                    <div class="media-heading mb-2">
                         <h2>
                             <a class="post-link" href="{{ post.url | prepend: site.baseurl }}">{{ post.title }}</a>
                         </h2>
@@ -35,6 +35,6 @@ layout: default
 
 </article>
 
-<div class="col-xs-12 col-md-4 m-t-2">
+<article class="col-12 col-md-4">
     {% include search-box.html %}
-</div>
+</article>

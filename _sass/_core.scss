@@ -295,3 +295,13 @@ form.search-form {
         margin-left: 0.5rem;
     }
 }
+
+.search-form-header {
+    display: flex;
+    padding: 0;
+    margin: 0 0 .5rem 0;
+    
+    img {
+    	margin-right: .25rem;
+    }
+}
