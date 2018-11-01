@@ -8,6 +8,10 @@ layout: default
         <div class="col-12 col-md-9">
         {{ content }}
 
+        {% if page.youtube_id %}
+          {% include youtube.html video_id=page.youtube_id %}
+        {% endif %}
+        
         {% if page.ibooks_intro %}
             {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
         {% endif %}
