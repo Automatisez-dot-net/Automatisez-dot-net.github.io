@@ -1,7 +1,7 @@
 ---
 layout: page_section
 title: iOS
-order: 2
+order: 3
 category: ios
 header_banner: banner-mangue.jpg
 links:
