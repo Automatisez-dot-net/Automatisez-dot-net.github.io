@@ -1,7 +1,7 @@
 ---
 layout: page_section
 title: Actions
-order: 4
+order: -1
 category: actions
 ibooks_intro: > # Message shown next to link to iBooks Store
     Trouvez encore plus d'exemple de processus, et apprenez à construire 
