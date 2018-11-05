@@ -13,8 +13,8 @@ Si vous utilisez les groupes pour organiser vos différents contacts,
 vous avez certainement ragé contre Apple qui vous oblige à passer par
 un ordinateur pour créer ces groupes.
 
-Dans cet article je vais vous montrer comment écrire deux courts programmes
-avec _SCriptable_ qui vont vous permettre d’ajouter ces fonctions à votre appareil :
+Dans cet article je vais vous montrer comment écrire un court programme
+avec _Scriptable_ qui vont vous permettre d’ajouter ces fonctions à votre appareil :
 
 - un premier script pour créer un groupe de contacts ;
 - un second script pour supprimer un groupe ;
@@ -177,7 +177,7 @@ d’erreur lors de l’enregistrement.
 Une erreur peut en effet se produire si le compte n’autorise pas la création
 de group, comme un compte Google Exchange.
 
-#### Le Script complet
+### Le Script complet
 
 Vous pouvez copier directement ce script dans _Scriptable_ pour ajouter l'action.
 
