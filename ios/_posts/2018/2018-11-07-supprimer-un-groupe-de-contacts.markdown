@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Supprimer un groupe de contacts sur iPhone et iPad
-date: 2018-11-06 07:00:00 +02:00
+date: 2018-11-07 07:00:00 +02:00
 logo: scriptable-app
 ---
 
