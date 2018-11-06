@@ -13,7 +13,7 @@ Dans ce second article, après avoir vu comment
 nous allons écrire un script pour supprimer un groupe toujours avec 
 _Scriptable_.
 
-__Avertissement__ : Cet billet n’est pas une initiation à JavaScript.
+__Avertissement__ : Ce billet n’est pas une initiation à JavaScript.
     Il suppose que vous connaissez un minimum le langage.
     Si vous ne le maitrisez pas, ce n’est pas un souci. Vous pouvez vous
     contenter de copier le script tel quel.
