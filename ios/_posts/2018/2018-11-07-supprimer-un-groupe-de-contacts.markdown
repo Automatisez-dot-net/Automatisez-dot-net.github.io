@@ -3,6 +3,9 @@ layout: post
 title: Supprimer un groupe de contacts sur iPhone et iPad
 date: 2018-11-07 07:00:00 +02:00
 logo: scriptable-app
+attachments:
+  - name: Supprimer un groupe de contacts (JavaScript pour _Shortcut_)
+    url: https://github.com/automatisez/iOS-workflow/raw/master/scriptable-app/contacts/delete-group.js
 ---
 
 Nouvel épisode dans la série d’articles sur _Scriptable_.
@@ -61,6 +64,11 @@ la liste des groupes.
 
 Tous les éléments sont maintenant en place. Il ne reste plus qu’à afficher le
 tableau et gérer la sélection de l’utilisateur.
+
+{% include post_image.html 
+    src='/img/screenshots/2018/11-07_delete-group.png' 
+    alt="La liste des groupes affichée par le script" %}
+
 
 _Vous vous demandez où se trouve notre code pour gérer la sélection ?_
 
@@ -239,6 +247,11 @@ function confirmDeleteGroup(group) {
   });
 }
 ```
+
+{% include post_image.html 
+    src='/img/screenshots/2018/11-07_delete-group-confirm.png' 
+    alt="Le dialogue de confirmation" %}
+
 
 Voyons maintenant comment coder la fonction de suppression `deleteGroup()`.
 

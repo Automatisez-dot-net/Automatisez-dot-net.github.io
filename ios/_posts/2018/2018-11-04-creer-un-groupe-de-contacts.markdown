@@ -3,6 +3,9 @@ layout: post
 title: Créer un groupe de contacts sur iPhone et iPad
 date: 2018-11-04 16:00:00 +02:00
 logo: scriptable-app
+attachments:
+  - name: Créer un groupe de contacts (JavaScript pour _Shortcut_)
+    url: https://github.com/automatisez/iOS-workflow/raw/master/scriptable-app/contacts/new-group.js
 ---
 
 Vous l’aurez surement remarqué, il n’est pas possible de créer des groupes
@@ -39,6 +42,10 @@ Nous allons construire un court programme interactif qui va agir en deux étapes
 
 1. un dialogue demande le nom du groupe à créer ;
 2. le groupe est ajouté à vos contacts.
+
+{% include post_image.html 
+    src='/img/screenshots/2018/11-04_new-group.png' 
+    alt="Le dialogue pour nommer un groupe" %}
 
 
 ### Créer un groupe
