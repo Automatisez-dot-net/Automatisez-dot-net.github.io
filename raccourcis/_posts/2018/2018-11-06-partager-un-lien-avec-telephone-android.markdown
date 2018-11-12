@@ -3,6 +3,7 @@ layout: post
 title: Partager un lien avec un téléphone Android
 date: 2018-11-06 10:00:00 +02:00
 logo: shortcut-app
+youtube_id: iJ2gE0DXGlM
 attachments: 
   - name: Partager un lien (raccourcis)
     url: https://github.com/automatisez/iOS-workflow/blob/master/tools/Share%20Link%20as%20QR%20Code.shortcut?raw=true
