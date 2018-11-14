@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Un système simple pour traduire vos scripts _Scriptable_
+title: Un système simple pour traduire vos scripts Scriptable
 date: 2018-11-14 22:00:00 +02:00
 logo: scriptable-app
 ---
