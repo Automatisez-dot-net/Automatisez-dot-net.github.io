@@ -6,9 +6,9 @@ logo: shortcut-app
 youtube_id: LJkwK-ecgHU
 attachments: 
   - name: Zip (raccourcis)
-    url: https://github.com/automatisez/iOS-workflow/blob/master/tools/Zip.shortcut?raw=true
+    url: https://raw.githubusercontent.com/automatisez/iOS-workflow/master/shortcuts-app/files/Zip.shortcut
   - name: Unzip (raccourcis)
-    url: https://github.com/automatisez/iOS-workflow/blob/master/tools/Unzip.shortcut?raw=true
+    url: https://raw.githubusercontent.com/automatisez/iOS-workflow/master/shortcuts-app/files/Unzip.shortcut
 ---
 
 Ces deux raccourcis fonctionnent comme des extension de partage
