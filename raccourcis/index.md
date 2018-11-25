@@ -35,3 +35,8 @@ ce formulaire.
 {% include modals/modal-shortcut-upload.html 
     modalId="shortcut-modal" 
     title="Proposer votre raccourci" %}
+
+-----
+
+La documentation de _Raccourcis_ est disponible sur le 
+[site d'Apple](https://support.apple.com/fr-fr/guide/shortcuts/welcome/ios).
