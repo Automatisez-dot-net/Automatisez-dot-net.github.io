@@ -58,7 +58,7 @@ Le raccourci principal ne va contenir que deux actions :
 2. l'appel du second raccourci pour créer le code de connexion du WiFi.
 
 {% include post_image.html 
-    src='' 
+    src='https://raw.githubusercontent.com/automatisez/iOS-workflow/master/shortcuts-app/wifi-share/Wifi partagé.png' 
     alt="Contenu d'un raccourci d'exemple « WiFi partagé »" %}
 
 Le dictionnaire créé contient doit contenir trois clés:
@@ -107,33 +107,32 @@ sous la forme d'un dictionnaire.
 
 La première action que vous devez donc ajouter est « _obtenir le dictionnaire de l'entrée_ ».
 
-Le résultat de cette action sera un dictionnaire identique à celui que nous avons construit
+Le résultat sera un dictionnaire identique à celui que nous avons construit
 dans le raccourci précédent et transmis sous la forme de texte.
 
 __Note:__ Si vous passez un objet d'un raccourcis vers un autre qui accepte un autre type
 de données, l'application _Raccourcis_ se charge de convertir automatiquement le type de données
 pour coller à ce qui est demandé.
 
-#### Récupérer chaque paramètre
+#### Récupérer les paramètres
 
 Il ne nous reste plus qu'à récupérer les valeurs des différentes clés attendues.
 Ajoutez une action « _obtenir la valeur du dictionnaire_ » et sélectionnez l'option 
 « _valeur_ ».
 
-Dans le champ « clé » indiqué le nom de la clé dont nous voulons la valeur, à savoir « name ».
+Dans le champ « clé » indiqué le nom de la première valeur à obteni, à savoir « sec ».
 
-Le résultat de cette action sera la valeur de la clé « name » dans le dictionnaire 
+Le résultat de cette action sera la valeur de la clé « sec » dans le dictionnaire 
 que nous venons de construire.
 
-Le nom du réseau « name » et le mot de passe « pwd » doivent être encodés pour 
-pouvoir être inséré dans le texte du code QR. Cet encodage est assez simple et demande
-simplement de précéder certains caratères d'un signe « \ ». 
+{% include post_image.html 
+    src='build-wifi-qr-code (util) 01' 
+    alt="" %}
 
-Mais pour éviter de dupliquer du code, et limiter les risques d'erreur, nous allons nous
-appuyer sur un troisième raccourci pour cela. En attendant, ajoutez simplement une action
-« _exécuter le raccourci_ » car nous allons avoir besoin de son résultat.
+Il nous reste à récupérer les valeurs pour « name » le nom du réseau et 
+« pwd » le mot de passe.
 
-Il nous reste à récupérer les valeurs pour le mot de passe et le protocole de sécurité.
+##### Passage par une variable magique
 
 Ajoutez une action « _obtenir la variable_ » pour obtenir à nouveau la valeur du 
 dictionnaire.
@@ -153,20 +152,36 @@ Touchez le bouton « _choisir une variable_ » dans l'action :
 5. vous allez revenir dans l'éditeur ;
 
 En touchant le nom de cette variable vous aurez la possibilité de modifier son nom, son type
-et aussi de retrouver l'action qui en fourni la valeur.
+et aussi de retrouver l'action dont provient la valeur.
 
-Vous avez à nouveau la valeur du dictionnaire, ajoutez à nouveau l'action 
-« _obtenir la valeur du dictionnaire_ » pour obtenir la valeur de la clé « pwd ».
+##### Nom du réseau et mot de passe
 
-Ajoutez encore une fois une action « _exécuter le raccourci_ » pour encoder ce mot de passe.
+Pour récupérer ces deux dernières informations, nous allons devoir à nouveau
+puiser dans le dictionnaire.
 
-Ajoutez à nouveau une action « _obtenir la variable_ » pour obtenir le dictionnaire, 
-puis « _obtenir la valeur du dictionnaire_ » pour obtenir la valeur de la clé « sec ».
+Pour obtenir à nouveau son contenu, ajoutez à nouveau l'action 
+« _obtenir la valeur du dictionnaire_ » pour obtenir la valeur de la clé « name ».
 
-En revanche, inutile d'encoder cette dernière valeur.
+Le nom du réseau « name », ainsi que le mot de passe « pwd », doivent être encodés pour 
+pouvoir être inséré dans le texte du code QR. Cet encodage est assez simple et demande
+simplement de précéder certains caratères d'un signe « \ ». 
 
-Nous avons maintenant récupérer les valeurs des clés « name », « pwd » et « sec » 
-et les deux premières valeurs sont encodées.
+Mais pour éviter de dupliquer du code, et limiter les risques d'erreur, nous allons nous
+appuyer sur un troisième raccourci pour cela. En attendant, ajoutez simplement une action
+« _exécuter le raccourci_ » car nous allons avoir besoin de son résultat.
+
+Ajoutez l'action « _exécuter le raccourci_ » pour encoder ce mot de passe.
+Inutile de renseigner le nom du raccourci pour l'instant, nous devons d'abord le créer.
+
+{% include post_image.html 
+    src='build-wifi-qr-code (util) 02' 
+    alt="" %}
+
+Répétez à nouveau ces trois mêmes actions pour la clé de dictionnaire « pwd » pour 
+récupérer et encoder le mot de passe.
+
+Nous avons maintenant récupérer les valeurs des trois clés « sec », « name » et « pwd » 
+et les deux dernières valeurs sont encodées.
 
 Nous pouvons maintenant passer à l'étape suivante, la construction du contenu du code QR.
 
@@ -188,6 +203,10 @@ Elle doit contenir les éléments suivants :
   
 Attention à bien terminer par deux caractères « ; ».
 
+{% include post_image.html 
+    src='build-wifi-qr-code (util) 03' 
+    alt="" %}
+
 
 #### Générer le code et l'afficher
 
@@ -199,13 +218,64 @@ Une correction d'erreur « _moyenne_ » devrait être suffisante dans la plupa
 AJoutez maintenant un action « _coup d'œil_ » qui va afficher ce code QR et 
 permettre un partage avec la feuille standard du système.
 
+{% include post_image.html 
+    src='build-wifi-qr-code (util) 04' 
+    alt="" %}
+
 Vous pourrez ainsi imprimer ce code sur un sticker, l'enregistrer dans une image
 ou simplement le présenter à chaque fois qu'un invité le demande.
 
 ### Encodage
 
+Il est temps de finaliser notre raccourci. Nous devons encore créer le raccourci qui
+va encoder le nom du réseau et le mot de passe.
 
+Créer un nouveau raccourci et nommez le « encode-wifi-qr-code-part (util) ».
 
-### Un bouton de partage
+Il ne va contenir qu'une seule action « _remplacer le texte_ ». 
+assurez vous que l'option « _expression régulière_ » est bien active.
+
+Nous allons rechercher toutes les correspondances à l'expression régulière
+suivante :
+
+    ([",;:\\])
+    
+- Les parenthèses permettent de définir un groupe.
+- Les crochet indiquent que nous définissont une liste de caractères
+- Dans cette liste le caractère « \ » est lui même précédé d'un « \ »
+  pour indiquer qu'il doit être pris pour lui même et ne constitue pas
+  le préfixe d'un autre caractères, comme dans « \n »
+
+La valeur de « _remplacer par_ » va aussi suivre la syntaxe d'une expression
+régulière :
+
+    \\$1
+    
+Ceci veut dire que tout ce qui correspond à l'expression régulière
+placée entre les parenthèses, sera remplacé par un signe « \ » suivi du résultat
+de la correpondance.
+
+Ainsi, si l'entrée de l'action est « bonjour; », la recherche va identifier le signe
+point-virgule et le rendre disponbible dans _$1_. 
+Le résultat du remplacement sera donc « bonjour\; ».
+
+{% include post_image.html 
+    src='encode-wifi-qr-code-part (util)' 
+    alt="" %}
+
+Ce dernier raccourci est maintenant terminé. Il ne vous reste plus qu'à indiquer
+son nom dans les actions qui l'utilisent dans le raccourci précédent.
+
+### Bilan
+
+Nous avons maintenant un moyen pour créer des codes QR pour se connecter 
+en toute sécurité à un réseau WiFi. Ne laisser pas trainer ces codes sur
+des papiers si votre réseau n'est pas destiné à être public.
+
+Du coté de _Raccourcis_ nous avons également vu rapidement comment utiliser les
+_variables magiques_ et aussi comment enchainer les raccourcis.
+
+J'espère que ces outils vous seront utiles.
+
 
 [jdl_wifi]: https://www.journaldulapin.com/2018/05/16/qrcode-wifi/
