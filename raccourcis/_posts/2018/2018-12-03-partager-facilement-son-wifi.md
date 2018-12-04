@@ -3,7 +3,7 @@ layout: post
 title: Partager facilement son WiFi avec un raccourci
 date: 2018-12-03 06:00:00 +02:00
 logo: shortcut-app
-youtube_id: 
+youtube_id: 1IYlEuLLlMY
 attachments: 
   - name: « encode-wifi-qr-code-part (util) » (raccourci)
     url: https://github.com/automatisez/iOS-workflow/raw/master/shortcuts-app/wifi-share/encode-wifi-qr-code-part%20(util).shortcut
