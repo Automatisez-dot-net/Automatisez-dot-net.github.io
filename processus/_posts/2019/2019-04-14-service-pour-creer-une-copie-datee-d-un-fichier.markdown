@@ -29,7 +29,7 @@ le travail des jours précédents en cas de pépin.
 Ce n'est pas assez clair ? Regardez comment utiliser ce processus en images dans
 la vidéo suivantes :
 
-{% include youtube.html video_id=qKsteCNFoLE %}
+{% include youtube.html video_id="qKsteCNFoLE" %}
 
 
 ### Mise en place du processus
