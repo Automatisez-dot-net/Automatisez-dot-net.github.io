@@ -20,11 +20,17 @@ L’objectif de ce service est de pouvoir rapidement créer un
 double d’un document en lui ajoutant une date, celle du jour,
 dans son nom.
 
-Ainsi un fichier « _mon roman.rtf_ » sera modifié en « _mon roman 2019-04-14.rtf_ »
-si j’utilise le processus aujourd’hui.
+Ainsi un fichier « _mon roman.rtf_ » sera modifié en 
+« _mon roman 2019-04-14.rtf_ » si j’utilise le processus aujourd’hui.
 
 Cela permet de toujours repartir sur une nouvelle copie, sans risquer de perdre
 le travail des jours précédents en cas de pépin.
+
+Ce n'est pas assez clair ? Regardez comment utiliser ce processus en images dans
+la vidéo suivantes :
+
+{% include youtube.html video_id=qKsteCNFoLE %}
+
 
 ### Mise en place du processus
 
