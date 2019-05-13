@@ -24,7 +24,7 @@ url: "http://Automatisez.net" # the base hostname & protocol for your site
 twitter_username: sgamel
 github_username:  automatisez
 
-exclude: [ "assets", "scripts", "vendor", "Gemfile*" ]
+exclude: [ "assets", "etc", "vendor", "Gemfile*" ]
 
 
 # Custom variables
