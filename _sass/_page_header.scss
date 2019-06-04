@@ -19,10 +19,24 @@ body > header {
     
     .navbar-dark .navbar-nav .nav-link {
         @include link-on-dark;
+        padding: 4px 8px;
+
+        border-left: 4px solid transparent;
+        border-bottom: none;
+        
+        @include media-breakpoint-up(sm) {
+            border-left: none;
+            border-bottom: 4px solid transparent;
+        }
         
         &.active {
-            color: colorNamed(invertedText);
-            border-bottom: 4px solid colorNamed(linkNormal);
+//            color: colorNamed(invertedText);
+            
+            border-left-color: colorNamed(linkinvertedActive);
+            
+            @include media-breakpoint-up(sm) {
+                border-bottom-color: colorNamed(linkinvertedActive);
+            }
         }
     }
     

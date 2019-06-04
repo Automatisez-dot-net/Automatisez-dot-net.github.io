@@ -19,10 +19,10 @@ $colorPalette: (
     textLight: #666666,
     invertedText: #e0e0e0,
 
-    linkNormal: #e03333,
+    linkNormal: #e03333, // #FF9767,
     linkActive: #ff4040,
-    linkinvertedActive: #f0f0f0, // Over dark backgrounds
-    linkVisited: darken(#e03333, 10%),
+    linkinvertedActive: #FFD90E, // Over dark backgrounds
+    linkVisited: darken(#FF9767, 10%),// darken(#e03333, 10%),
 
     headings: #ff5842,
     primary: rgb(243,72,170),

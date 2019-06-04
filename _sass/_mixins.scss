@@ -1,10 +1,18 @@
 @mixin link-on-dark {
-    &, &:visited {
-        color: colorNamed(linkNormal);
+    &, 
+    &:visited {
+        color: colorNamed(linkinvertedActive);
     }
 
+    &:focus,
     &:hover,
     &:active {
-        color: colorNamed(linkinvertedActive);
+        background-color: colorNamed(linkinvertedActive);
+        color: darken(colorNamed(linkinvertedActive), 90%);
+    }
+
+    &:active:focus,
+    &:active:hover {
+        color: darken(colorNamed(linkinvertedActive), 90%);
     }
 }
