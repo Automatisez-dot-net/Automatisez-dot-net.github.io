@@ -1,8 +1,8 @@
 ---
 layout: default
 ---
-<article class="">
-    <header class="media mb-3">
+<main class="main">
+    <header id="page-content-header" role="heading" class="media mb-3">
         {% if page.logo %}
         <div class="media-left" >
             <img class="media-object mr-1" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
@@ -10,17 +10,21 @@ layout: default
         {% endif %}
         
         <div class="media-body">
-            <h2 class="media-heading mt-0 mb-1" >{{ page.title }}</h2>
+            <h2 id="page-content-title" 
+                class="media-heading mt-0 mb-1" >{{ page.title }}</h2>
             <div><small class="">{{ post.date | date: "%Y %b %-d" }}</small></div>
         </div>
     </header>
     
     
     <div class="container row">
-        <div class="col-12 col-md-8 col-lg-9">
+        <article id="page-content" role=section" 
+              aria-labelledby="page-content-header"
+              class="col-12 col-md-8 col-lg-9">
         {{ content }}
-        </div>
-        <div class="col-12 col-md-4 col-lg-3">
+        </article>
+        <aside role="aside" 
+               class="col-12 col-md-4 col-lg-3">
             {% if page.youtube_id %}
                 <hr class="hidden-md-up mt-3">
                 {% include youtube.html video_id=page.youtube_id %}
@@ -29,10 +33,10 @@ layout: default
             {% include download_links.html title="Téléchargez..." %}
             {% include attachments.html title="Téléchargez..." %}
             
-        </div>
+        </aside>
     </div>
     
     {% if page.ibooks_intro %}
         {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
     {% endif %}
-</article>
+</main>

@@ -8,9 +8,10 @@ Include parameters:
 - author
 
 -->
-<header class="media mt-1 mb-3">
+<header role="heading" class="media mt-1 mb-3">
     {% if include.logo %}
-      <img class="align-self-center mr-1" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
+      <img class="align-self-center mr-1" src="/img/icon-posts/{{page.logo}}.png" width="92" 
+           alt="" aria-hidden="true">
     {% endif %}
 
     <div class="media-body">

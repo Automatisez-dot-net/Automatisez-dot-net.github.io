@@ -1,14 +1,15 @@
 ---
 layout: default
 ---
-<article>
-    <header class="media mt-1 mb-3">
+<main role="main" aria-labelledby="section-header-title">
+    <header id="section-header" role="heading" 
+            class="media mt-1 mb-3">
         {% if page.logo %}
-          <img class="align-self-center mr-1" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="Logo">
+          <img class="align-self-center mr-1" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="" aria-hidden="true">
         {% endif %}
         
         <div class="media-body align-self-center">
-            <h2 class="media-heading my-0" >{{ page.title }}</h2>
+            <h2 id="section-header-title" class="media-heading my-0" >{{ page.title }}</h2>
             {% if page.date %}
                 <div class="mt-1"><small class="">{{ page.date | date: "%Y %b %-d" }}</small></div>
             {% endif %}
@@ -16,7 +17,9 @@ layout: default
     </header>
     
     <div class="row">
-        <div class="col-12 col-sm-8 mt-1">
+        <article id="section-content" role="section" 
+                 aria-labelledby="section-header"
+                 class="col-12 col-sm-8 mt-1">
             <div>
                 {{ content }}
             </div>
@@ -24,20 +27,20 @@ layout: default
             {% if page.ibooks_intro %}
                 {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
             {% endif %}
-        </div>
-        <div class="col-12 col-sm-4">
+        </article>
+        <aside role="aside" class="col-12 col-sm-4">
             {% include search-box.html %}
             {% include list_of_links.html title="Sous-sections" %}
             {% include download_links.html title="Liens de téléchargements" %}
-        </div>
+        </aside>
     </div>
 </article>
 
 {% assign pageCategory = page.category %}
 {% assign listOfPosts = site.categories[pageCategory]  %}
 
-<article>
-    <header class="">
+<article role="region" aria-labelledby="section-toc-title">
+    <header id="section-toc-title">
         <h2 class="">Articles</h2>
     </header>
     
@@ -58,7 +61,8 @@ layout: default
 
                     {% if post.logo %}
                         <div class="media-right text-right" >
-                            <img class="media-object ml-1" src="/img/icon-posts/{{post.logo}}.png" width="92" alt="Logo">
+                            <img class="media-object ml-1" src="/img/icon-posts/{{post.logo}}.png" width="92" 
+                                 alt="" aria-hidden="true">
                         </div>
                     {% endif %}
 
@@ -66,4 +70,4 @@ layout: default
             </li>
         {% endfor %}
     </ul>
-</article>
+</main>

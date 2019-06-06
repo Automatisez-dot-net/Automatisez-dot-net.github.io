@@ -11,7 +11,7 @@ répétitives pour vous concentrer sur l’essentiel.
 
 ### Raccourcis pour iOS
 <img class="float-right ml-1" src="/img/icon-posts/shortcut-app.png" width="92" 
-     alt="Application Raccourcis">
+     alt="Icône de l'application Raccourcis, un S stylisé avec des dégradés de couleurs">
 
 Vous avez peut-être entendu parler de 
 [Workflow](https://en.wikipedia.org/wiki/Workflow_(app)) ?
@@ -32,7 +32,7 @@ vous pouvez proposer vos raccourcis pour les faire publier sur ce site.
 
 ### Automator pour macOS
 <img class="float-right ml-1" src="/img/icon-posts/automator.png" width="92" 
-     alt="Application Automator">
+     alt="Icône de l'application Automator, un robot tenant un tuyeau">
 
 Oui cette petite application cachée au milieu de votre Mac que vous avez 
 ignoré jusqu’à aujourd’hui… 
