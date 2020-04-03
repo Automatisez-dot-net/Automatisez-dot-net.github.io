@@ -1,0 +1,31 @@
+/*
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+*/
+/*
+    Created on : 2 avr. 2020, 22:48:16
+    Author     : Sylvain Gamel <contact@SylvainGamel.fr>
+*/
+
+.dark-bg-box {
+    position: relative;
+    
+    &::before {
+        content: '';
+        display: block;
+        
+        position: absolute;
+        top: -20px;
+        bottom: -20px;
+        left: -50px;
+        right: -50px;
+        
+        height: calc(100% + 40px);
+        
+        border-radius: 12px;
+        
+        opacity: 0.05;
+        background-color: black;
+    }
+}

@@ -1,0 +1,12 @@
+{% assign imgSrc   = include.imgSrc %}
+{% assign imgAlt   = include.imgAlt %}
+{% assign url      = include.url %}
+{% assign urlTitle = include.urlTitle %}
+{% assign content  = include.content %}
+
+<div class="media my-4">
+  <a href="{{ url }}" title="{{ urlTitle }}" class="d-block mr-3"><img src="{{ imgSrc }}" class="card-img" alt="{{ imgAlt }}"></a>
+  <div class="media-body">
+    {{ content |markdownify }}
+  </div>
+</div>

@@ -1,0 +1,41 @@
+{% assign src=include.src %}
+{% assign videoAlign=include.align %}
+{% assign description=include.description %}
+{% assign loop=include.loop %}
+
+
+{% if description %}
+  {% assign videoColSpec = "col-12 col-sm" %}
+{% else %}
+  {% assign videoColSpec = "col-12 mb-1" %}
+{% endif %}
+
+<div class="video-box row my-5 dark-bg-box">
+  
+  {% if description %}
+    {% if "right" == videoAlign %}
+      <div class="col-12 col-sm">
+        {{ description | markdownify }}
+      </div>
+    {% endif %}
+  {% endif %}
+  
+  <div class="{{ videoColSpec }} text-center text-sm-left">
+    <video controls 
+           {% if loop %} loop {% endif %}
+           width="100%">
+      <source src="{{ src }}"
+              type="video/mp4">
+      Votre navigateur ne gère pas les vidéos.
+    </video>
+  </div>
+  
+  {% if description %}
+    {% if "right" != videoAlign %}
+      <div class="col-12 col-sm">
+        {{ description | markdownify }}
+      </div>
+    {% endif %}
+  {% endif %}
+
+</div>

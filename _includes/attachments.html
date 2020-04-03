@@ -1,6 +1,6 @@
 {% if page.attachments %}
     <hr class="hidden-md-up mt-3">
-    <h3 class="responsive">{{ include.title }}</h3>
+    <h3 id="downloadSection" class="responsive">{{ include.title }}</h3>
     {% for item in page.attachments %}
         {% assign icon_src="cloud-download" %}
         {% if item.icon %}
