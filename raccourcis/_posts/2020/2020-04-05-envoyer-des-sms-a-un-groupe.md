@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Envoyer des SMS à un groupe de contacts
-date: 2020-04-03 06:00:00 +02:00
+date: 2020-04-05 17:00:00 +02:00
 logo: shortcut-app
 attachments: 
   - name: SMS à un groupe (raccourcis)
@@ -72,7 +72,7 @@ Commencez par ouvrir _Raccourcis_ et ajoutez un nouvel élément en tapant
 le bouton « **+** » placé en haut en droite.
 
 {% include post_image.html
-    src="/img/2020/03/00-creation.jpg" 
+    src="/img/2020/04/00-creation.jpg" 
     alt="Contenu du raccourci après création" %}
 
 Étant donné que nous voulons une extension pour la feuille de partage, 
@@ -386,4 +386,4 @@ d’intègre à _Raccourcis_.
 [reMobilesSuisse1]: https://regexper.com/#%5E%28%5C%2B41%5Cs%29%3F%2874%7C75%7C76%7C77%7C78%7C79%29%5B0-9.%5Cs%5D%2B
 [reMobilesSuisse2]: https://regexper.com/#%5E%28%5C%2B41%5Cs%29%3F7%5B4-9%5D%5B0-9.%5Cs%5D%2B
 
-[articleBonus]: /raccourcis/2020/04/03/introduction-aux-expressions-regulieres.html
+[articleBonus]: /raccourcis/2020/04/05/introduction-aux-expressions-regulieres.html

@@ -1,7 +1,7 @@
 ---
 layout: post
 title: Les Expressions régulières en 10 minutes
-date: 2020-04-03 06:01:00 +02:00
+date: 2020-04-05 17:01:00 +02:00
 logo: shortcut-app
 attachments: 
   - name: SMS à un groupe (raccourcis)
@@ -230,4 +230,4 @@ Amusez-vous bien avec les correspondances par expression régulière.
 [reMobilesSuisse1]: https://regexper.com/#%5E%28%5C%2B41%5Cs%29%3F%2874%7C75%7C76%7C77%7C78%7C79%29%5B0-9.%5Cs%5D%2B
 [reMobilesSuisse2]: https://regexper.com/#%5E%28%5C%2B41%5Cs%29%3F7%5B4-9%5D%5B0-9.%5Cs%5D%2B
 
-[mainArticle]: /raccourcis/2020/04/03/envoyer-des-sms-a-un-groupe.html
+[mainArticle]: /raccourcis/2020/04/05/envoyer-des-sms-a-un-groupe.html
