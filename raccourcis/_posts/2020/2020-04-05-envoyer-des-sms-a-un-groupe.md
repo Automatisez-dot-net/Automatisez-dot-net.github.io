@@ -205,17 +205,19 @@ numéro mobile français :
 
   ```^(\+33\s)?0?[67][0-9.\s]+```
 
+> Je vous ai écrit un [petit article bonus][articleBonus]
+> pour vous expliquer comment comprendre cette expression et
+> l’adapter à vos besoins.
+
+
 {% include post_image.html 
     src="/img/2020/04/04-regex.png" 
     alt="L'action pour comparer un texte à une expression régulière." %}
 
 
 Comme cet article ne porte pas sur les expressions régulières, je ne vais pas 
-détailler ici comment comprendre ou modifier celle-ci.
-
-Je vous ai en revanche ajouté un [petit article bonus][articleBonus]
-pour vous expliquer comment comprendre cette expression et, éventuellement,
-l’adapter à vos besoins.
+détailler ici comment comprendre ou modifier celle-ci. Je vous renvoie à
+[l'article][articleBonus] qui lui est consacré.
 
 
 
