@@ -189,6 +189,17 @@ Je parle des _[expressions régulières][regexp]_.
 Une technique capable d'identifier des motifs spécifiques dans une suite 
 de caractères.
 
+
+Avant d’en arriver à ce stade, nous allons devoir ajouter une action
+dans la boucle « **répéter avec chaque élément dans…** » :
+
+1. cherchez l’action « **correspondre au texte** » ;
+2. une fois dans la liste, l’intitulé de l’action sera
+   « **faire correspondre… dans _élément de répétition_** » ;
+3. il ne vous reste plus qu’à saisir l’expression régulière dans
+   après « ****faire correspondre…** ».
+
+
 Voici l’expression régulière à saisir pour identifier un
 numéro mobile français :
 
@@ -378,6 +389,11 @@ pour utiliser une autre application de messagerie.
 La seule condition est qu’elle propose un action _paramétrable_ qui
 d’intègre à _Raccourcis_.
 
+-----
+
+**Mises à jour**
+
+- clarification de la partie concernant le filtrage.
 
 [regexp]: https://fr.wikipedia.org/w/index.php?title=Expression_régulière
 [regExper]: https://regexper.com/
