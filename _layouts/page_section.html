@@ -5,7 +5,7 @@ layout: default
     <header id="section-header" role="heading" 
             class="media mt-1 mb-3">
         {% if page.logo %}
-          <img class="align-self-center mr-1" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="" aria-hidden="true">
+          <img class="align-self-baseline mr-1" src="/img/icon-posts/{{page.logo}}.png" width="92" alt="" aria-hidden="true">
         {% endif %}
         
         <div class="media-body align-self-center">
@@ -17,9 +17,10 @@ layout: default
     </header>
     
     <div class="row">
+        <div class="col-12 col-sm-8 mt-1">
         <article id="section-content" role="section" 
                  aria-labelledby="section-header"
-                 class="col-12 col-sm-8 mt-1">
+                 >
             <div>
                 {{ content }}
             </div>
@@ -28,13 +29,6 @@ layout: default
                 {% include iBooks-link.html message=page.ibooks_intro link=site.ibooks_link label=site.ibooks_link_alt %}
             {% endif %}
         </article>
-        <aside role="aside" class="col-12 col-sm-4">
-            {% include search-box.html %}
-            {% include list_of_links.html title="Sous-sections" %}
-            {% include download_links.html title="Liens de téléchargements" %}
-        </aside>
-    </div>
-</article>
 
 {% assign pageCategory = page.category %}
 {% assign listOfPosts = site.categories[pageCategory]  %}
@@ -70,4 +64,15 @@ layout: default
             </li>
         {% endfor %}
     </ul>
+</article>
+          
+        </div>
+        <aside role="aside" class="col-12 col-sm-4">
+            {% include search-box.html %}
+            {% include list_of_links.html title="Liens" %}
+            {% include download_links.html title="Liens de téléchargements" %}
+        </aside>
+    </div>
+</article>
+
 </main>

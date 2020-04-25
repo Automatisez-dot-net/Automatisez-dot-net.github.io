@@ -1,10 +1,12 @@
 {% if page.links %}
     <hr class="hidden-md-up mt-3">
     <h3 class="responsive">{{ include.title }}</h3>
-    <dl>
+    <ul>
       {% for item in page.links %}
-      <a href="{{item.url}}"><h4 class="my-0">{{item.name}}</h4></a>
-      <p class="text-small">{{item.description | markdownify}}</p>
+      <li>
+        <a href="{{item.url}}"><strong class="my-0">{{item.name}}</strong></a>
+        <p class="text-small">{{item.description | markdownify}}</p>
+      </li>
     {% endfor %}
-    </dl>
+    </ul>
 {% endif %}
