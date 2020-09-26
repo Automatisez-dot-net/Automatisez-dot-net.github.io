@@ -46,13 +46,13 @@ Appuyez longuement sur le widget jusqu'à ce que le menu suivant s'affiche :
 
 {% include post_image.html 
     src='/img/screenshots/2020/09-scriptable-widget/scriptable-widget-menu.jpg' 
-    alt="Un widget Scriptable vide" %}
+    alt="Le menu de configuration d'un widget." %}
 
 Choisissez l'option « modifier le widget » pour basculer dans la configuration.
 
 {% include post_image.html 
     src='/img/screenshots/2020/09-scriptable-widget/scriptable-widget-conf.jpg'
-    alt="Un widget Scriptable vide" %}
+    alt="Configuration d'un widget Scriptable." %}
 
 Touchez l'option « script » pour choisir celui qui va fournir le contenu de ce
 widget. 
@@ -61,7 +61,7 @@ message d'erreur.
 
 {% include post_image.html 
     src='/img/screenshots/2020/09-scriptable-widget/scriptable-widget-noscript.jpg' 
-    alt="Un widget Scriptable vide" %}
+    alt="Erreur si votre script est vide et ne fourni pas de contenu." %}
 
 C'est tout à fait normal puisque votre script est pour l'instant totalement vide.
 Nous allons maintenant préparer un contenu minimum pour ce widget.
