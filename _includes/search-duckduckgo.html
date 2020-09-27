@@ -1,0 +1,19 @@
+<header id="search-form-header" class="search-form-header">    
+  <span>Chercher avec DuckDuckGo :</span>
+</header>
+<form method="get" action="https://duckduckgo.com/" role="search"
+      target="_blank"
+      onsubmit="addSiteSearch()" class="search-form">
+  <input id="query" name="q" maxlength="255" type="text"/>
+  <button type="submit" value="Search" aria-label="chercher" 
+          class="btn btn-sm btn-info">&gt;</button> 
+</form>
+<script type="text/javascript"> 
+  function encodeHTML(s) { 
+    return s.replace(/&/g, '&amp;').replace(/</g, '&lt;').replace(/"/g, '&quot;'); 
+  } 
+  
+  function addSiteSearch() { 
+    document.getElementById('query').value = document.getElementById('query').value + " site:https://automatisez.net/"; 
+  } 
+</script>
