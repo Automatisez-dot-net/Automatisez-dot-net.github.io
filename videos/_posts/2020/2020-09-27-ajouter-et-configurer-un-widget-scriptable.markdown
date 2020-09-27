@@ -1,29 +1,56 @@
 ---
 layout: post_video
-title:  "Cliquez avec la voix"
-date:   2019-06-03 12:00:00 +0100
-logo:   macOSX
-youtube_id: rkuo5OiQu84
+title:  "Ajouter et configurer un widget Scriptable"
+date:   2020-09-27 07:00:00 +0100
+logo:   scriptable-app
+youtube_id: PaGevrebuTs
 ---
 
-Les commandes vocales ne sont pas tellement utilisées sur Mac.
-Pourtant leur existence remonte jusqu’au système classique et Automator
-vous permet même de créer vos propres commandes sous la forme de processus.
+Cette vidéo vous montre comment ajouter un widget [Scriptable](https://scriptable.app) 
+à votre écran d'accueil sur iOS 14. 
+Tout ce qui est nécessaire c'est quelques bases de JavaScript et un peu d'imagination.
 
-Dans cette vidéo, je vous montre un processus simple qui génère
-un clic secondaire avec votre souris.
+Si vous voulez télécharger le script de ce widget, et découvrir comment 
+Scriptable permet de le créer, vous trouverez toutes les détails de sa 
+construction dans cet article:
 
-L’action utilisée est disponible dans une application dédiée que vous pouvez 
-[télécharger gratuitement sur mon site](https://www.sylvaingamel.fr/fr/applications/mousebot/).
+[L'image astronomique du jour en widget](http://automatisez.net/ios/2020/09/24/image-astronomique-du-jour-en-widget.html)
 
-Cette vidéo n’est qu’un exemple. Vous pourriez aussi imaginer un processus
-pour simuler une souris avec un troisième bouton en le remplaçant par
-un raccourci clavier.
+Cet exemple assez simple vous initiera à l'utilisation d'une API web.
+Si vous voulez prendre en main Scriptable pour construire un widget plus simple,
+vous pouvez vous initier en douceur avec cet article :
 
-À l’origine, j’ai implémenté cette action à la suite à une demande sur l’accessibilité
-du Mac. 
-Pouvoir cliquer à l’aide de sa voix est une facilité pour les personnes qui
-souffrent de problème moteur.
+[Créez vos widgets avec Scriptable](http://automatisez.net/ios/2020/09/23/creer-vos-widget-avec-scriptable.html)
 
-Mais j’espère qu’avec cette petite action vous saurez dépasser l’objectif
-posé par la demande initiale et lui trouvez une place sur vos Mac.
+-----
+
+### Transcription
+
+Bonjour, nous allons voir comment configurer un widget écrit avec Scriptable.
+
+À partir de l’écran d’accueil, vous allez basculer en mode édition en
+laissant le doigt appuyé.
+
+Appuyez sur le bouton « + » (plus) pour sélectionner un widget.
+
+On cherche l’application Scriptable.
+
+Sélectionnez la bonne taille de widget et faites-la glisser parmi vos
+icônes, à l’endroit que vous voulez.
+
+Il faut maintenant configurer le widget en sélectionnant le script qui va fournir
+le contenu. Dans notre cas, ça va être l’image astronomique du jour.
+
+Et évidemment le mode d’interaction quand vous allez toucher le widget.
+Ici c’est ouvrir l’URL de l’image du jour à la NASA.
+
+Et voilà, vous avez un widget configuré, parmi vos icônes, pour avoir 
+l’image astronomique de la journée. 
+Si vous touchez le widget, vous allez ouvrir la page correspondante sur 
+le site de la NASA.
+
+Amusez-vous bien avec les widgets et retrouvez d’autres scripts sur 
+[Automatisez.net](https://Automatisez.net)
+
+À bientôt.
+
