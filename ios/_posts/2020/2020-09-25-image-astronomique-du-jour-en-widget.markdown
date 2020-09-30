@@ -4,9 +4,6 @@ title: L'image astronomique du jour avec un widget Scriptable
 date: 2020-09-25 00:00:00 +02:00
 logo: scriptable-app
 attachments:
-    - name: "APOD widget"
-      path: scriptable/APOD-widget.js.zip
-download_url:
     - name: "APOD widget sur Github"
       url: https://gist.github.com/automatisez/c6f6e6725b57c410aa0633dd35b0c3ce
       description: Téléchargez la dernière mise à jour de ce script.
