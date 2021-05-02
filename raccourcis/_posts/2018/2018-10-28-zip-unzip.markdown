@@ -2,7 +2,7 @@
 layout: post
 title: Zip et Unzip pour iPad
 date: 2018-10-28 19:00:00 +02:00
-logo: shortcut-app
+logo: shortcuts-app
 youtube_id: LJkwK-ecgHU
 attachments: 
   - name: Zip (raccourcis)

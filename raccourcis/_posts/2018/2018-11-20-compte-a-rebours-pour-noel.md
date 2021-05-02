@@ -2,7 +2,7 @@
 layout: post
 title: Combien de temps avant Noël?
 date: 2018-11-20 06:00:00 +02:00
-logo: shortcut-app
+logo: shortcuts-app
 youtube_id: WPz7BFd4tpI
 attachments: 
   - name: combien-de-jours-avant-noel (raccourcis)

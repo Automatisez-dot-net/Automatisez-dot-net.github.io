@@ -4,7 +4,7 @@ title: Raccourcis
 order: 2
 category: raccourcis
 header_banner: banner-mangue.jpg
-logo: shortcut-app
+logo: shortcuts-app
 download_url:
     - name: Raccourcis
       url: https://itunes.apple.com/fr/app/raccourcis/id915249334?mt=8

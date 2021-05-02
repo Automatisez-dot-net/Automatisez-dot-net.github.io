@@ -2,7 +2,7 @@
 layout: post
 title: Retirer des panneaux anti-bloqueur publicitaires sur iOS
 date: 2018-11-18 06:00:00 +02:00
-logo: shortcut-app
+logo: shortcuts-app
 youtube_id: rd14xO2LP0A
 attachments: 
   - name: Unblock (raccourcis)

@@ -2,7 +2,7 @@
 layout: post
 title: Échanger du texte entre un PC et un iPhone
 date: 2018-11-26 06:00:00 +02:00
-logo: shortcut-app
+logo: shortcuts-app
 youtube_id: knd7BCjXCe8
 attachments: 
   - name: Scan Code (raccourcis)

@@ -2,7 +2,7 @@
 layout: post
 title: Les Expressions régulières en 10 minutes
 date: 2020-04-05 17:01:00 +02:00
-logo: shortcut-app
+logo: shortcuts-app
 attachments: 
   - name: SMS à un groupe (raccourcis)
     url: https://www.icloud.com/shortcuts/3ee01c9e43804cb1aafea4539e2a226d

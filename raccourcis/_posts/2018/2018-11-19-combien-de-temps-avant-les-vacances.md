@@ -2,7 +2,7 @@
 layout: post
 title: Combien de jours avant vos vacances?
 date: 2018-11-19 20:00:00 +02:00
-logo: shortcut-app
+logo: shortcuts-app
 youtube_id: zWpqJmWRGmE
 attachments: 
   - name: Combien de jours avant mes vacances (raccourcis)

@@ -10,7 +10,7 @@ Apprenez à laisser votre ordinateur prendre en charge les tâches les plus
 répétitives pour vous concentrer sur l’essentiel.
 
 ### Raccourcis pour iOS
-<img class="float-right ml-1" src="/img/icon-posts/shortcut-app.png" width="92" 
+<img class="float-right ml-1" src="/img/icon-posts/shortcuts-app.png" width="92" 
      alt="Icône de l'application Raccourcis, un S stylisé avec des dégradés de couleurs">
 
 Vous avez peut-être entendu parler de 
