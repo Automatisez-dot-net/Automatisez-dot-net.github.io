@@ -48,4 +48,4 @@ defaults:
 sass:
     load_paths:
         - _sass
-        - vendor/bundle/ruby/2.6.0/gems/bootstrap-4.6.0/assets/stylesheets/
+        - node_modules/bootstrap/scss/

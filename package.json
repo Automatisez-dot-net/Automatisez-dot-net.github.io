@@ -1,0 +1,16 @@
+{
+    "name": "Automatisez-dot-net",
+    "version": "1.0.0",
+    "description": "Website for Automatisez.net",
+    "main": "index.html",
+    "repository": "https://info%40automatisez.net@github.com/Automatisez-dot-net/Automatisez-dot-net.github.io.git",
+    "author": "Automatisez-dot-net <info@automatisez.net>",
+    "license": "MIT",
+    "scripts": {
+        "install": "bundle install --path vendor/bundle",
+        "start": "bundle exec jekyll serve"
+    },
+    "dependencies": {
+        "bootstrap": "^4.6.0"
+    }
+}
