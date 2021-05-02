@@ -12,7 +12,8 @@
 @import "variables";
 @import "mixins";
 
-@import "../_bootstrap4/scss/bootstrap";
+// Path of Gem must be properly defined in the _config.yml file
+@import "bootstrap";
 
 @import "functions";
 
